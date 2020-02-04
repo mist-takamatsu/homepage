@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <title>MIST solution 高松支店</title>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- css -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300,700,800" rel="stylesheet" media="screen">
+
+  <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="/css/style.css" rel="stylesheet" media="screen">
+  <link href="/color/default.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+
+  {{- partial "nav" . -}}
+
+  {{- block "main" . }}
+
+  <div class="container">
+
+    {{ .Content }}
+
+  </div>
+
+  {{- end }}
+
+  {{- partial "footer" . -}}
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  {{- partial "script" . -}}
+</body>
+
+</html>
