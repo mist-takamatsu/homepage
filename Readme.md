@@ -44,6 +44,4 @@ hugo server
 
 ## ホスト
 
-本番環境：<https://mist-takamatsu-homepage.netlify.com>
-
-開発環境：<https://mist-takamatsu-homepage-dev.netlify.com>
+<https://mist-takamatsu-homepage-hugo.netlify.com>
