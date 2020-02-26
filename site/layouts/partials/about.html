@@ -1,11 +1,13 @@
+{{ with .Site.GetPage "/section/about.md" }}
+
 <section id="about" class="home-section bg-white">
   <div class="container">
     <div class="row">
       <div class="col-md-offset-2 col-md-8">
         <div class="section-heading">
-          <h2>About us</h2>
+          <h2>{{ .Title }}</h2>
           <div class="heading-line"></div>
-          <p>We’ve been building unique digital products, platforms, and experiences for the past 6 years.</p>
+          <p>{{ .SubTitle }}</p>
         </div>
       </div>
     </div>
@@ -30,3 +32,5 @@
     </div>
   </div>
 </section>
+
+{{ end }}
