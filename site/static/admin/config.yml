@@ -72,9 +72,9 @@ collections:
             widget: "list"
             fields:
               - { label: "サムネイル", name: "thumbnail", widget: "image" }
-              - { label: "タイトル", name: "workTitle", widget: "string" }
-              - { label: "本文", name: "workBody", widget: "markdown" }
               - { label: "画像", name: "workImg", widget: "image" }
+              - { label: "タイトル", name: "workTitle", widget: "string" }
+              - { label: "本文", name: "workBody", widget: "text" }
               - { label: "リンク", name: "workLink", widget: "string" }
       - file: "site/content/section/parallax2.md"
         label: "Parallax2"
