@@ -7,6 +7,7 @@ cover:
       Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti
       vel. Minus et tempore modi architecto.
     title: Alstar web studio
+    active: true
   - img: /img/intro-2.jpg
     subtitle: >-
       Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est
@@ -14,6 +15,7 @@ cover:
       Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti
       vel. Minus et tempore modi architecto.
     title: Creativity and technology
+    active: false
   - img: /img/intro-3.jpg
     subtitle: >-
       Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est
@@ -21,5 +23,6 @@ cover:
       Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti
       vel. Minus et tempore modi architecto.
     title: Sequi ea ut et est quaerat
+    active: false
 ---
 

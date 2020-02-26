@@ -1,4 +1,4 @@
-{{ with .Site.GetPage "/section/about.md" }}
+{{ with .Site.GetPage "/section/intro.md" }}
 
 <section id="intro">
   <div class="intro-container">
@@ -6,44 +6,20 @@
 
       <div class="carousel-inner" role="listbox">
 
-        <!-- Slide 1 -->
-        <div class="item active">
-          <div class="carousel-background"><img src="/img/intro-1.jpg" alt=""></div>
+        {{ range .Params.Cover }}
+
+        <div class="item {{ if .active }}active{{ end }}">
+          <div class="carousel-background"><img src="{{ .img }}" alt=""></div>
           <div class="carousel-container">
             <div class="carousel-content">
-              <h2 class="animated fadeInDown">Alstar web studio</h2>
-              <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea
-                voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+              <h2 class="animated fadeInDown">{{ .title }}</h2>
+              <p class="animated fadeInUp">{{ .subtitle }}</p>
               <a href="#about" class="btn-get-started animated fadeInUp">Read More</a>
             </div>
           </div>
         </div>
 
-        <!-- Slide 2 -->
-        <div class="item">
-          <div class="carousel-background"><img src="/img/intro-2.jpg" alt=""></div>
-          <div class="carousel-container">
-            <div class="carousel-content">
-              <h2 class="animated fadeInDown">Creativity and technology</span></h2>
-              <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea
-                voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-              <a href="#about" class="btn-get-started animated fadeInUp">Read More</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="item">
-          <div class="carousel-background"><img src="/img/intro-3.jpg" alt=""></div>
-          <div class="carousel-container">
-            <div class="carousel-content">
-              <h2 class="animated fadeInDown">Sequi ea ut et est quaerat</span></h2>
-              <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea
-                voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-              <a href="#about" class="btn-get-started animated fadeInUp">Read More</a>
-            </div>
-          </div>
-        </div>
+        {{ end }}
 
       </div>
 
