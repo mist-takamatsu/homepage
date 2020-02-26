@@ -18,12 +18,12 @@ locale: "ja"
 collections:
   - label: "セクション"
     name: "section"
+    editor:
+      preview: false
     files:
       - file: "site/content/section/intro.md"
         label: "Intro"
         name: "intro"
-        editor:
-          preview: false
         fields:
           - label: "Cover"
             name: "cover"
