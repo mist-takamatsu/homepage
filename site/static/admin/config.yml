@@ -28,7 +28,7 @@ collections:
             widget: "list"
             fields:
             - { label: "タイトル", name: "title", widget: "string" }
-            - { label: "サブタイトル", name: "subtitle", widget: "string" }
+            - { label: "サブタイトル", name: "subtitle", widget: "text" }
             - { label: "背景", name: "img", widget: "image" }
       - file: "site/content/section/about.md"
         label: "About"
