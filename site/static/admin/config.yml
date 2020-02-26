@@ -1,0 +1,109 @@
+backend:
+  name: git-gateway
+  branch: feature/addhugo
+
+# アップロードされた画像ファイルのパス
+media_folder: "site/static/img"
+# アップロードされた画像ファイルの場所
+public_folder: "/img"
+# ワークフローの追加
+publish_mode: editorial_workflow
+# 公開サイトのURL
+site_url: https://mist-takamatsu-homepage-hugo.netlify.com/
+# サイト編集画面に表示されるリンク
+display_url: https://mist-takamatsu-homepage-hugo.netlify.com/
+# 言語設定
+locale: "ja"
+
+collections:
+  - label: "セクション"
+    name: "page"
+    files:
+      - file: "site/content/section/about.md"
+        label: "About"
+        name: "about"
+        fields:
+          - { label: "タイトル", name: "title", widget: "string" }
+          - { label: "サブタイトル", name: "subtitle", widget: "string" }
+          - { label: "本文", name: "body", widget: "markdown" }
+      - file: "site/content/section/parallax1.md"
+        label: "Parallax1"
+        name: "parallax1"
+        fields:
+          - { label: "タイトル", name: "title", widget: "string" }
+          - { label: "サブタイトル", name: "subtitle", widget: "string" }
+          - { label: "本文", name: "body", widget: "markdown" }
+      - file: "site/content/section/services.md"
+        label: "Services"
+        name: "services"
+        fields:
+          - { label: "タイトル", name: "title", widget: "string" }
+          - { label: "サブタイトル", name: "subtitle", widget: "string" }
+          - label: "Service"
+            name: "service"
+            widget: "list"
+            fields:
+              - { label: "タイトル", name: "serviceTitle", widget: "string" }
+              - { label: "本文", name: "serviceBody", widget: "markdown" }
+              - { label: "画像", name: "serviceImg", widget: "image" }
+      - file: "site/content/section/works.md"
+        label: "Works"
+        name: "works"
+        fields:
+          - { label: "タイトル", name: "title", widget: "string" }
+          - { label: "サブタイトル", name: "subtitle", widget: "string" }         
+          - label: "Work"
+            name: "work"
+            widget: "list"
+            fields:
+              - { label: "サムネイル", name: "thumbnail", widget: "image" }
+              - { label: "タイトル", name: "workTitle", widget: "string" }
+              - { label: "本文", name: "workBody", widget: "markdown" }
+              - { label: "画像", name: "workImg", widget: "image" }
+              - { label: "リンク", name: "workLink", widget: "string" }
+      - file: "site/content/section/parallax2.md"
+        label: "Parallax2"
+        name: "parallax2"
+        fields:
+          - label: "Client"
+            name: "client"
+            widget: "list"
+            fields:
+              - { label: "画像", name: "rogo", widget: "image" }
+      - file: "site/content/section/team.md"
+        label: "Team"
+        name: "team"
+        fields:
+          - { label: "タイトル", name: "title", widget: "string" }
+          - { label: "サブタイトル", name: "subtitle", widget: "string" }
+          - label: "Member"
+            name: "member"
+            widget: "list"
+            fields:
+              - { label: "名前", name: "name", widget: "string" }
+              - { label: "役割", name: "role", widget: "string" }
+              - { label: "写真", name: "photo", widget: "image" }
+      - file: "site/content/section/contact.md"
+        label: "Contact"
+        name: "contact"
+        fields:
+          - { label: "タイトル", name: "title", widget: "string" }
+          - { label: "サブタイトル", name: "subtitle", widget: "string" }          
+      - file: "site/content/section/bottom-widget.md"
+        label: "Bottom-widget"
+        name: "bottom-widget"
+        fields:
+          - { label: "所在地", name: "place", widget: "string" }
+          - { label: "電話番号", name: "phone", widget: "list" }                  
+          - { label: "メールアドレス", name: "email", widget: "list" }                  
+          - label: "SNS"
+            name: "sns"
+            widget: "list"
+            fields:
+              - { label: "画像", name: "img", widget: "image" }
+              - { label: "リンク", name: "link", widget: "image" }
+      - file: "site/content/section/footer.md"
+        label: "Footer"
+        name: "footer"
+        fields:
+          - { label: "本文", name: "body", widget: "text" }          
