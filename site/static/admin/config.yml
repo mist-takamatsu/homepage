@@ -17,14 +17,26 @@ locale: "ja"
 
 collections:
   - label: "セクション"
-    name: "page"
+    name: "section"
     files:
+      - file: "site/content/section/intro.md"
+        label: "Intro"
+        name: "intro"
+        fields:
+          - label: "Cover"
+            name: "cover"
+            widget: "list"
+            fields:
+            - { label: "タイトル", name: "title", widget: "string" }
+            - { label: "サブタイトル", name: "subtitle", widget: "string" }
+            - { label: "背景", name: "img", widget: "image" }
       - file: "site/content/section/about.md"
         label: "About"
         name: "about"
         fields:
           - { label: "タイトル", name: "title", widget: "string" }
           - { label: "サブタイトル", name: "subtitle", widget: "string" }
+          - { label: "画像", name: "img", widget: "image" }
           - { label: "本文", name: "body", widget: "markdown" }
       - file: "site/content/section/parallax1.md"
         label: "Parallax1"
@@ -32,7 +44,7 @@ collections:
         fields:
           - { label: "タイトル", name: "title", widget: "string" }
           - { label: "サブタイトル", name: "subtitle", widget: "string" }
-          - { label: "本文", name: "body", widget: "markdown" }
+          - { label: "背景", name: "img", widget: "image" }
       - file: "site/content/section/services.md"
         label: "Services"
         name: "services"
@@ -51,7 +63,7 @@ collections:
         name: "works"
         fields:
           - { label: "タイトル", name: "title", widget: "string" }
-          - { label: "サブタイトル", name: "subtitle", widget: "string" }         
+          - { label: "サブタイトル", name: "subtitle", widget: "string" }
           - label: "Work"
             name: "work"
             widget: "list"
@@ -65,6 +77,7 @@ collections:
         label: "Parallax2"
         name: "parallax2"
         fields:
+          - { label: "背景", name: "img", widget: "image" }
           - label: "Client"
             name: "client"
             widget: "list"
@@ -88,14 +101,22 @@ collections:
         name: "contact"
         fields:
           - { label: "タイトル", name: "title", widget: "string" }
-          - { label: "サブタイトル", name: "subtitle", widget: "string" }          
+          - { label: "サブタイトル", name: "subtitle", widget: "string" }
       - file: "site/content/section/bottom-widget.md"
         label: "Bottom-widget"
         name: "bottom-widget"
         fields:
           - { label: "所在地", name: "place", widget: "string" }
-          - { label: "電話番号", name: "phone", widget: "list" }                  
-          - { label: "メールアドレス", name: "email", widget: "list" }                  
+          - label: "電話番号"
+            name: "phone"
+            widget: "list"
+            fields:
+              - { label: "番号", name: "number", widget: "string" }
+          - label: "メールアドレス"
+            name: "email"
+            widget: "list"
+            fields:
+              - { label: "アドレス", name: "address", widget: "string" }
           - label: "SNS"
             name: "sns"
             widget: "list"
@@ -106,4 +127,4 @@ collections:
         label: "Footer"
         name: "footer"
         fields:
-          - { label: "本文", name: "body", widget: "text" }          
+          - { label: "本文", name: "body", widget: "text" }
