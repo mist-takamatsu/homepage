@@ -5,16 +5,11 @@ subtitle: >-
   the past 6 years.
 img: /img/about-img.jpg
 ---
-### **Lorem ipsum dolor sit amet, consectetur adipiscing elite storium paralate**
+### Lorem ipsum dolor sit amet, consectetur adipiscing elite storium paralate
 
+*Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est   laborum.*
 
-*Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-  laborum.*
-
-
-  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-  voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-  proident, sunt in culpa qui officia deserunt mollit anim id est laborum Libero justo laoreet sit amet
+  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in   voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non   proident, sunt in culpa qui officia deserunt mollit anim id est laborum Libero justo laoreet sit amet
   cursus sit amet dictum sit. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend
   donec Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
   laborum
