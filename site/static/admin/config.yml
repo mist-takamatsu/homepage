@@ -22,6 +22,8 @@ collections:
       - file: "site/content/section/intro.md"
         label: "Intro"
         name: "intro"
+        editor:
+          preview: false
         fields:
           - label: "Cover"
             name: "cover"
