@@ -3,9 +3,9 @@ backend:
   branch: feature/addhugo
 
 # アップロードされた画像ファイルのパス
-media_folder: "site/static/img"
+media_folder: "site/static/img/"
 # アップロードされた画像ファイルの場所
-public_folder: "/img"
+public_folder: "/img/"
 # ワークフローの追加
 publish_mode: editorial_workflow
 # 公開サイトのURL
