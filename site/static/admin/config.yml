@@ -25,7 +25,7 @@ collections:
         label: "イントロ"
         name: "intro"
         fields:
-          - label: "Cover"
+          - label: "カバー"
             name: "cover"
             widget: "list"
             fields:
@@ -53,7 +53,7 @@ collections:
         fields:
           - { label: "タイトル", name: "title", widget: "string" }
           - { label: "サブタイトル", name: "subtitle", widget: "string" }
-          - label: "Service"
+          - label: "サービス"
             name: "service"
             widget: "list"
             fields:
@@ -66,7 +66,7 @@ collections:
         fields:
           - { label: "タイトル", name: "title", widget: "string" }
           - { label: "サブタイトル", name: "subtitle", widget: "string" }
-          - label: "Work"
+          - label: "ワーク"
             name: "work"
             widget: "list"
             fields:
@@ -80,7 +80,7 @@ collections:
         name: "parallax2"
         fields:
           - { label: "背景", name: "img", widget: "image" }
-          - label: "Client"
+          - label: "クライアント"
             name: "client"
             widget: "list"
             fields:
@@ -91,7 +91,7 @@ collections:
         fields:
           - { label: "タイトル", name: "title", widget: "string" }
           - { label: "サブタイトル", name: "subtitle", widget: "string" }
-          - label: "Member"
+          - label: "メンバー"
             name: "member"
             widget: "list"
             fields:
