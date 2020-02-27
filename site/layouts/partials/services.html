@@ -1,11 +1,13 @@
+{{ with .Site.GetPage "/section/services.md" }}
+
 <section id="services" class="home-section bg-white">
   <div class="container">
     <div class="row">
       <div class="col-md-offset-2 col-md-8">
         <div class="section-heading">
-          <h2>Services</h2>
+          <h2>{{ .Params.Title }}</h2>
           <div class="heading-line"></div>
-          <p>We’ve been building unique digital products, platforms, and experiences for the past 6 years.</p>
+          <p>{{ .Params.SubTitle }}</p>
         </div>
       </div>
     </div>
@@ -15,55 +17,26 @@
 
           <!-- slides -->
           <div class="carousel-inner">
-            <div class="item active">
+
+            {{ range .Params.Service }}
+
+            <div class="item {{ if .active }}active{{ end }}">
               <div class="row">
                 <div class="col-sm-12 col-md-offset-1 col-md-6">
                   <div class="wow bounceInLeft">
-                    <h4>Website Design</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna.</p>
+                    <h4>{{ .serviceTitle }}</h4>
+                    <p>{{ .serviceBody }}</p>
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-5">
                   <div class="screenshot wow bounceInRight">
-                    <img src="/img/screenshots-1.png" class="img-responsive" alt="" />
+                    <img src="{{ .serviceImg }}" class="img-responsive" alt="" />
                   </div>
                 </div>
               </div>
             </div>
-            <div class="item">
-              <div class="row">
-                <div class="col-sm-12 col-md-offset-1 col-md-6">
-                  <div class="wow bounceInLeft">
-                    <h4>Brand Identity</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna.</p>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-md-5">
-                  <div class="screenshot wow bounceInRight">
-                    <img src="/img/screenshots-2.png" class="img-responsive" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="row">
-                <div class="col-sm-12 col-md-offset-1 col-md-6">
-                  <div class="wow bounceInLeft">
-                    <h4>Web & Mobile Apps</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna.</p>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-md-5">
-                  <div class="screenshot wow bounceInRight">
-                    <img src="/img/screenshots-3.png" class="img-responsive" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
+            {{ end }}
 
           <!-- Indicators -->
           <ol class="carousel-indicators">
@@ -76,3 +49,5 @@
     </div>
   </div>
 </section>
+
+{{ end }}
