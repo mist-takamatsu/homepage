@@ -125,10 +125,13 @@ collections:
             name: "sns"
             widget: "list"
             fields:
-              - { label: "画像", name: "img", widget: "image" }
-              - { label: "リンク", name: "link", widget: "image" }
+              - label: "select"
+                name: "select"
+                widget: "select"
+                options: ["facebook", "dribbble", "twitter", "pinterest"]
+              - { label: "リンク", name: "link", widget: "string" }
       - file: "site/content/section/footer.md"
         label: "Footer"
         name: "footer"
         fields:
-          - { label: "本文", name: "body", widget: "text" }
+          - { label: "本文", name: "body", widget: "markdown" }
