@@ -18,9 +18,9 @@
           <!-- slides -->
           <div class="carousel-inner">
 
-            {{ range .Params.Service }}
+            {{ range $i, $e:= .Params.Service }}
 
-            <div class="item {{ if .active }}active{{ end }}">
+            <div class="item{{ if (eq $i 0) }} active{{ end }}">
               <div class="row">
                 <div class="col-sm-12 col-md-offset-1 col-md-6">
                   <div class="wow bounceInLeft">

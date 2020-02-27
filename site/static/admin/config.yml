@@ -32,7 +32,6 @@ collections:
             - { label: "タイトル", name: "title", widget: "string" }
             - { label: "サブタイトル", name: "subtitle", widget: "text" }
             - { label: "背景", name: "img", widget: "image" }
-            - { label: "トップ", name: "active", widget: "boolean", defult: "false"}
       - file: "site/content/section/about.md"
         label: "About"
         name: "about"
@@ -61,7 +60,6 @@ collections:
               - { label: "タイトル", name: "serviceTitle", widget: "string" }
               - { label: "画像", name: "serviceImg", widget: "image" }
               - { label: "本文", name: "serviceBody", widget: "text" }
-              - { label: "トップ", name: "active", widget: "boolean", defult: "false"}
       - file: "site/content/section/works.md"
         label: "Works"
         name: "works"

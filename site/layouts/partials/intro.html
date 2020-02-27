@@ -6,9 +6,9 @@
 
       <div class="carousel-inner" role="listbox">
 
-        {{ range .Params.Cover }}
+        {{ range $i, $e:= .Params.Cover }}
 
-        <div class="item {{ if .active }}active{{ end }}">
+        <div class="item{{ if (eq $i 0) }} active{{ end }}">
           <div class="carousel-background"><img src="{{ .img }}" alt=""></div>
           <div class="carousel-container">
             <div class="carousel-content">
