@@ -22,7 +22,7 @@ collections:
       preview: false
     files:
       - file: "site/content/section/intro.md"
-        label: "Intro"
+        label: "イントロ"
         name: "intro"
         fields:
           - label: "Cover"
@@ -33,7 +33,7 @@ collections:
             - { label: "サブタイトル", name: "subtitle", widget: "text" }
             - { label: "背景", name: "img", widget: "image" }
       - file: "site/content/section/about.md"
-        label: "About"
+        label: "アバウト"
         name: "about"
         fields:
           - { label: "タイトル", name: "title", widget: "string" }
@@ -41,14 +41,14 @@ collections:
           - { label: "画像", name: "img", widget: "image" }
           - { label: "本文", name: "body", widget: "markdown" }
       - file: "site/content/section/parallax1.md"
-        label: "Parallax1"
+        label: "パララックス１"
         name: "parallax1"
         fields:
           - { label: "タイトル", name: "title", widget: "string" }
           - { label: "サブタイトル", name: "subtitle", widget: "string" }
           - { label: "背景", name: "img", widget: "image" }
       - file: "site/content/section/services.md"
-        label: "Services"
+        label: "サービス"
         name: "services"
         fields:
           - { label: "タイトル", name: "title", widget: "string" }
@@ -61,7 +61,7 @@ collections:
               - { label: "画像", name: "serviceImg", widget: "image" }
               - { label: "本文", name: "serviceBody", widget: "text" }
       - file: "site/content/section/works.md"
-        label: "Works"
+        label: "ワーク"
         name: "works"
         fields:
           - { label: "タイトル", name: "title", widget: "string" }
@@ -76,7 +76,7 @@ collections:
               - { label: "本文", name: "workBody", widget: "text" }
               - { label: "リンク", name: "workLink", widget: "string" }
       - file: "site/content/section/parallax2.md"
-        label: "Parallax2"
+        label: "パララックス２"
         name: "parallax2"
         fields:
           - { label: "背景", name: "img", widget: "image" }
@@ -86,7 +86,7 @@ collections:
             fields:
               - { label: "画像", name: "rogoImg", widget: "image" }
       - file: "site/content/section/team.md"
-        label: "Team"
+        label: "チーム"
         name: "team"
         fields:
           - { label: "タイトル", name: "title", widget: "string" }
@@ -99,13 +99,13 @@ collections:
               - { label: "役割", name: "role", widget: "string" }
               - { label: "写真", name: "photo", widget: "image" }
       - file: "site/content/section/contact.md"
-        label: "Contact"
+        label: "コンタクト"
         name: "contact"
         fields:
           - { label: "タイトル", name: "title", widget: "string" }
           - { label: "サブタイトル", name: "subtitle", widget: "string" }
       - file: "site/content/section/bottom_widget.md"
-        label: "Bottom_widget"
+        label: "ボトムウィジェット"
         name: "bottom_widget"
         fields:
           - { label: "所在地", name: "place", widget: "string" }
@@ -129,7 +129,7 @@ collections:
                 options: ["facebook", "dribbble", "twitter", "pinterest"]
               - { label: "リンク", name: "link", widget: "string" }
       - file: "site/content/section/footer.md"
-        label: "Footer"
+        label: "フッター"
         name: "footer"
         fields:
           - { label: "本文", name: "body", widget: "markdown" }
