@@ -6,6 +6,14 @@ phone:
 email:
   - address: hello@alstarstudio.com
   - address: sales@alstarstudio.com
-sns: []
+sns:
+  - link: '#'
+    select: facebook
+  - link: '#'
+    select: dribbble
+  - link: '#'
+    select: twitter
+  - link: '#'
+    select: pinterest
 ---
 
