@@ -58,8 +58,8 @@ collections:
             name: "service"
             widget: "list"
             fields:
-              - { label: "画像", name: "serviceImg", widget: "image" }
               - { label: "タイトル", name: "serviceTitle", widget: "string" }
+              - { label: "画像", name: "serviceImg", widget: "image" }
               - { label: "本文", name: "serviceBody", widget: "text" }
               - { label: "トップ", name: "active", widget: "boolean", defult: "false"}
       - file: "site/content/section/works.md"
@@ -72,9 +72,9 @@ collections:
             name: "work"
             widget: "list"
             fields:
+              - { label: "タイトル", name: "workTitle", widget: "string" }
               - { label: "サムネイル", name: "thumbnail", widget: "image" }
               - { label: "画像", name: "workImg", widget: "image" }
-              - { label: "タイトル", name: "workTitle", widget: "string" }
               - { label: "本文", name: "workBody", widget: "text" }
               - { label: "リンク", name: "workLink", widget: "string" }
       - file: "site/content/section/parallax2.md"
