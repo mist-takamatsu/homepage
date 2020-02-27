@@ -86,7 +86,7 @@ collections:
             name: "client"
             widget: "list"
             fields:
-              - { label: "画像", name: "rogo", widget: "image" }
+              - { label: "画像", name: "rogoImg", widget: "image" }
       - file: "site/content/section/team.md"
         label: "Team"
         name: "team"
@@ -106,9 +106,9 @@ collections:
         fields:
           - { label: "タイトル", name: "title", widget: "string" }
           - { label: "サブタイトル", name: "subtitle", widget: "string" }
-      - file: "site/content/section/bottom-widget.md"
-        label: "Bottom-widget"
-        name: "bottom-widget"
+      - file: "site/content/section/bottom_widget.md"
+        label: "Bottom_widget"
+        name: "bottom_widget"
         fields:
           - { label: "所在地", name: "place", widget: "string" }
           - label: "電話番号"

@@ -1,3 +1,5 @@
+{{ with .Site.GetPage "/section/bottom_widget.md" }}
+
 <section id="bottom-widget" class="home-section bg-white">
   <div class="container">
     <div class="row">
@@ -5,9 +7,7 @@
         <div class="contact-widget wow bounceInLeft">
           <i class="fa fa-map-marker fa-4x"></i>
           <h5>Main Office</h5>
-          <p>
-            109 Borough High Street,<br />London SE1 1NL
-          </p>
+          <p>{{ .Params.Place }}</p>
         </div>
       </div>
       <div class="col-md-4">
@@ -15,7 +15,14 @@
           <i class="fa fa-phone fa-4x"></i>
           <h5>Call</h5>
           <p>
-            +1 111 9998 7774<br> +1 245 4544 6855
+
+          {{ range $i, $e:= .Params.Phone }}
+
+            {{ if not (eq $i 0) }}<br />{{ end }}
+
+            {{- .number -}}
+
+          {{ end }}
 
           </p>
         </div>
@@ -24,9 +31,15 @@
         <div class="contact-widget wow bounceInRight">
           <i class="fa fa-envelope fa-4x"></i>
           <h5>Email us</h5>
-          <p>
-            hello@alstarstudio.com<br />sales@alstarstudio.com
-          </p>
+
+          {{ range $i, $e:= .Params.Email }}
+
+            {{ if not (eq $i 0) }}<br />{{ end }}
+
+            {{- .address -}}
+
+          {{ end }}
+
         </div>
       </div>
     </div>
@@ -63,3 +76,5 @@
     </div>
   </div>
 </section>
+
+{{ end }}

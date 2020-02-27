@@ -1,12 +1,13 @@
+{{ with .Site.GetPage "/section/contact.md" }}
+
 <section id="contact" class="home-section bg-gray">
   <div class="container">
     <div class="row">
       <div class="col-md-offset-2 col-md-8">
         <div class="section-heading">
-          <h2>Contact us</h2>
+          <h2>{{ .Params.Title }}</h2>
           <div class="heading-line"></div>
-          <p>If you have any question or just want to say 'hello' to Alstar web studio please fill out form below and
-            we will be get in touch with you within 24 hours. </p>
+          <p>{{ .Params.SubTitle }}</p>
         </div>
       </div>
     </div>
@@ -56,3 +57,5 @@
 
   </div>
 </section>
+
+{{ end }}

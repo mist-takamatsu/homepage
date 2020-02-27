@@ -1,9 +1,9 @@
 ---
 img: /img/parallax-2.jpg
 client:
-  - rogo: /img/clients-1.png
-  - rogo: /img/clients-2.png
-  - rogo: /img/clients-3.png
-  - rogo: /img/clients-4.png
+  - rogoImg: /img/clients-1.png
+  - rogoImg: /img/clients-2.png
+  - rogoImg: /img/clients-3.png
+  - rogoImg: /img/clients-4.png
 ---
 
