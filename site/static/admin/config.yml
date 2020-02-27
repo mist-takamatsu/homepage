@@ -6,8 +6,6 @@ backend:
 media_folder: "site/static/img"
 # アップロードされた画像ファイルの場所
 public_folder: "/img"
-# ワークフローの追加
-publish_mode: editorial_workflow
 # 公開サイトのURL
 site_url: https://mist-takamatsu-homepage-hugo.netlify.com/
 # サイト編集画面に表示されるリンク
