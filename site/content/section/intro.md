@@ -6,7 +6,7 @@ cover:
       estquaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut.
       Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti
       vel. Minus et tempore modi architecto.
-    title: Alstar web studio1
+    title: Alstar web studio
   - img: /img/intro-2.jpg
     subtitle: >-
       Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et
