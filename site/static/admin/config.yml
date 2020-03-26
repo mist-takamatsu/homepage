@@ -14,3 +14,42 @@ display_url: https://mist-takamatsu-homepage-dev.netlify.com
 locale: "ja"
 
 collections:
+  - label: "ページ"
+    name: "page"
+    files:
+      - file: "site/content/_index.md"
+        label: "トップ"
+        name: "top"
+        fields:
+          - { label: "タイトル", name: "title", widget: "string" }
+          - { label: "このページの説明", name: "description", widget: "text" }
+      - file: "site/content/team.md"
+        label: "TEAM"
+        name: "team"
+        fields:
+          - { label: "タイトル", name: "title", widget: "string" }
+          - { label: "このページの説明", name: "description", widget: "text" }
+      - file: "site/content/about.md"
+        label: "ABOUT"
+        name: "about"
+        fields:
+          - { label: "タイトル", name: "title", widget: "string" }
+          - { label: "このページの説明", name: "description", widget: "text" }
+      - file: "site/content/access.md"
+        label: "ACCESS"
+        name: "access"
+        fields:
+          - { label: "タイトル", name: "title", widget: "string" }
+          - { label: "このページの説明", name: "description", widget: "text" }
+      - file: "site/content/infomation.md"
+        label: "INFOMATION"
+        name: "infomation"
+        fields:
+          - { label: "タイトル", name: "title", widget: "string" }
+          - { label: "このページの説明", name: "description", widget: "text" }
+      - file: "site/content/entry.md"
+        label: "ENTRY"
+        name: "entry"
+        fields:
+          - { label: "タイトル", name: "title", widget: "string" }
+          - { label: "このページの説明", name: "description", widget: "text" }
