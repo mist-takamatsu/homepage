@@ -1,3 +1,5 @@
 ---
 title: "about"
+description: >-
+  ABOUTページ
 ---
