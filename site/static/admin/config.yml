@@ -1,0 +1,16 @@
+backend:
+  name: git-gateway
+  branch: develop
+
+# アップロードされた画像ファイルのパス
+media_folder: "site/static/img"
+# アップロードされた画像ファイルの場所
+public_folder: "/img"
+# 公開サイトのURL
+site_url: https://mist-takamatsu-homepage-dev.netlify.com
+# サイト編集画面に表示されるリンク
+display_url: https://mist-takamatsu-homepage-dev.netlify.com
+# 言語設定
+locale: "ja"
+
+collections:
