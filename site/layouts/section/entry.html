@@ -39,27 +39,27 @@
     <form class="col-lg-10 offset-lg-1">
 
       <div class="form-group row">
-        <label for="" class="col-sm-3 col-form-label">お名前※</label>
+        <label for="name" class="col-sm-3 col-form-label">お名前※</label>
         <div class="col-sm-9">
-          <input type="text" class="form-control" id="" required>
+          <input type="text" class="form-control" id="name" name="name" required>
         </div>
       </div>
 
       <div class="form-group row">
-        <label for="" class="col-sm-3 col-form-label">フリガナ※</label>
+        <label for="name_kn" class="col-sm-3 col-form-label">フリガナ※</label>
         <div class="col-sm-9">
-          <input type="text" class="form-control" id="" required>
+          <input type="text" class="form-control" id="name_kn" name="name_kn" required>
         </div>
       </div>
 
       <div class="form-group row">
-        <label for="" class="col-sm-3 col-form-label">生年月日※</label>
+        <label class="col-sm-3 col-form-label">生年月日※</label>
         <div class="col-sm-9">
           <div class="row">
             <div class="col-md-4 mb-3">
               <div class="row">
                 <div class="col-10">
-                  <input type="text" class="form-control" id="" required>
+                  <input type="text" class="form-control" id="birth_y" name="birth_y" required>
                 </div>
                 <div class="col-2 d-flex align-items-center">
                   <span>年</span>
@@ -69,7 +69,7 @@
             <div class="col-md-4 mb-3">
               <div class="row">
                 <div class="col-10">
-                  <input type="text" class="form-control" id="" required>
+                  <input type="text" class="form-control" id="birth_m" name="birth_m" required>
                 </div>
                 <div class="col-2 d-flex align-items-center">
                   <span>月</span>
@@ -79,7 +79,7 @@
             <div class="col-md-4 mb-3">
               <div class="row">
                 <div class="col-10">
-                  <input type="text" class="form-control" id="" required>
+                  <input type="text" class="form-control" id="birth_d" name="birth_d" required>
                 </div>
                 <div class="col-2 d-flex align-items-center">
                   <span>日</span>
@@ -91,21 +91,21 @@
       </div>
 
       <div class="form-group row">
-        <label for="" class="col-sm-3 col-form-label">性別※</label>
+        <label class="col-sm-3 col-form-label">性別※</label>
         <div class="col-sm-9">
           <div class="row">
             <div class="col-3">
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                <label class="form-check-label" for="exampleRadios1">
+                <input class="form-check-input" type="radio" name="gender" id="gender_man" value="option1">
+                <label class="form-check-label" for="gender_man">
                   男性
                 </label>
               </div>
             </div>
             <div class="col-3">
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                <label class="form-check-label" for="exampleRadios2">
+                <input class="form-check-input" type="radio" name="gender" id="gender_woman" value="option2">
+                <label class="form-check-label" for="gender_woman">
                   女性
                 </label>
               </div>
@@ -115,33 +115,33 @@
       </div>
 
       <div class="form-group row">
-        <label for="" class="col-sm-3 col-form-label">ご住所※</label>
+        <label class="col-sm-3 col-form-label">ご住所※</label>
         <div class="col-sm-9">
           <div class="row mb-3">
             <div class="col-1 d-flex align-items-center">
-              <label for=""><strong class="h4">&#12306;</strong></label>
+              <label for="address_code"><strong class="h4">&#12306;</strong></label>
             </div>
             <div class="col-md-4 col-11">
-              <input type="text" class="form-control" required>
+              <input type="text" class="form-control" id="address_code" name="address_code" required>
             </div>
           </div>
           <div class="row mb-3">
             <div class="col-md-4">
-              <label for="">都道府県</label>
-              <input type="text" class="form-control" id="" required>
+              <label for="address_ken">都道府県</label>
+              <input type="text" class="form-control" id="address_ken" name="address_ken" required>
             </div>
           </div>
           <div class="row mb-3">
             <div class="col">
-              <label for="">市区町村番地</label>
-              <input type="text" class="form-control" id="" required>
+              <label for="address_sity">市区町村番地</label>
+              <input type="text" class="form-control" id="address_sity" name="address_sity" required>
             </div>
           </div>
           <div>
             <div class="row mb-3">
               <div class="col">
-                <label for="">マンション・ビル名</label>
-                <input type="text" class="form-control" id="" required>
+                <label for="address_building">マンション・ビル名</label>
+                <input type="text" class="form-control" id="address_building" name="address_building" required>
               </div>
             </div>
           </div>
@@ -149,51 +149,51 @@
       </div>
 
       <div class="form-group row">
-        <label for="" class="col-sm-3 col-form-label">電話番号※</label>
+        <label for="phone_number" class="col-sm-3 col-form-label">電話番号※</label>
         <div class="col-sm-9">
-          <input type="text" class="form-control" id="" required>
+          <input type="text" class="form-control" id="phone_number" name="phone_number" required>
         </div>
       </div>
 
       <div class="form-group row">
-        <label for="" class="col-sm-3 col-form-label">メールアドレス※</label>
+        <label for="email" class="col-sm-3 col-form-label">メールアドレス※</label>
         <div class="col-sm-9">
-          <input type="text" class="form-control" id="" required>
+          <input type="text" class="form-control" id="email" name="email" required>
           <span class="ml-4 small">▼確認のため再度メールアドレスの入力をお願いします。</span>
-          <input type="text" class="form-control" id="" required>
+          <input type="text" class="form-control" id="" name="email_confirem" required>
         </div>
       </div>
 
       <div class="form-group row">
-        <label for="" class="col-sm-3 col-form-label">卒業学校名※</label>
+        <label for="school_name" class="col-sm-3 col-form-label">卒業学校名※</label>
         <div class="col-sm-9">
           <div class="row">
             <div class="col-md-6">
-              <input type="text" class="form-control" id="" required>
+              <input type="text" class="form-control" id="school_name" name="school_name" required>
             </div>
           </div>
         </div>
       </div>
 
       <div class="form-group row">
-        <label for="" class="col-sm-3 col-form-label">学部・学科※</label>
+        <label for="shcool_faculty" class="col-sm-3 col-form-label">学部・学科※</label>
         <div class="col-sm-9">
           <div class="row">
             <div class="col-md-6">
-              <input type="text" class="form-control" id="" required>
+              <input type="text" class="form-control" id="shcool_faculty" name="shcool_faculty" required>
             </div>
           </div>
         </div>
       </div>
 
       <div class="form-group row">
-        <label for="" class="col-sm-3 col-form-label">卒業年月日※</label>
+        <label class="col-sm-3 col-form-label">卒業年月日※</label>
         <div class="col-sm-9">
           <div class="row">
             <div class="col-md-4 mb-3">
               <div class="row">
                 <div class="col-10">
-                  <input type="text" class="form-control" id="" required>
+                  <input type="text" class="form-control" id="school_graduate_y" name="school_graduate_y" required>
                 </div>
                 <div class="col-2 d-flex align-items-center">
                   <span>年</span>
@@ -203,7 +203,7 @@
             <div class="col-md-4 mb-3">
               <div class="row">
                 <div class="col-10">
-                  <input type="text" class="form-control" id="" required>
+                  <input type="text" class="form-control" id="school_graduate_m" name="school_graduate_m" required>
                 </div>
                 <div class="col-2 d-flex align-items-center">
                   <span>月</span>
@@ -213,7 +213,7 @@
             <div class="col-md-4 mb-3">
               <div class="row">
                 <div class="col-10">
-                  <input type="text" class="form-control" id="" required>
+                  <input type="text" class="form-control" id="school_graduate_d" name="school_graduate_d" required>
                 </div>
                 <div class="col-2 d-flex align-items-center">
                   <span>日</span>
@@ -225,34 +225,27 @@
       </div>
 
       <div class="form-group row">
-        <label for="" class="col-sm-3 col-form-label">保有資格※</label>
+        <label for="qualification" class="col-sm-3 col-form-label">保有資格</label>
         <div class="col-sm-9">
-          <input type="text" class="form-control" id="" required>
+          <textarea class="form-control" id="qualification" name="qualification" rows="4"></textarea>
         </div>
       </div>
 
       <div class="form-group row">
-        <label for="" class="col-sm-3 col-form-label">保有資格</label>
+        <label for="motivation" class="col-sm-3 col-form-label">応募動機</label>
         <div class="col-sm-9">
-          <textarea class="form-control" id="" rows="4"></textarea>
+          <textarea class="form-control" id="motivation" name="motivation" rows="4"></textarea>
         </div>
       </div>
 
       <div class="form-group row">
-        <label for="" class="col-sm-3 col-form-label">応募動機</label>
+        <label for="question" class="col-sm-3 col-form-label">希望・質問</label>
         <div class="col-sm-9">
-          <textarea class="form-control" id="" rows="4"></textarea>
+          <textarea class="form-control" id="question" name="question" rows="4"></textarea>
         </div>
       </div>
 
-      <div class="form-group row">
-        <label for="" class="col-sm-3 col-form-label">希望・質問</label>
-        <div class="col-sm-9">
-          <textarea class="form-control" id="" rows="4"></textarea>
-        </div>
-      </div>
-
-      <div class="form-group row">
+      <div class="form-group row my-5">
         <div class="col-md-8 offset-md-2">
           <div class="row  mb-3">
             <div class="col">
@@ -261,8 +254,8 @@
           </div>
           <div class="row mb-3">
             <div class="col-3 offset-1 form-check">
-              <input type="checkbox" class="" id="">
-              <label class="form-check-label" for="">同意する</label>
+              <input type="checkbox" class="form-check-input" id="privacy_consent" name="privacy_consent">
+              <label class="form-check-label" for="privacy_consent">同意する</label>
             </div>
             <div class="col-8">
               ▼個人情報の取り扱いについて
