@@ -5,13 +5,13 @@
   <h1 class="my-5 text-center">エントリーホーム</h1>
 
   <div class="row my-5">
-    <div class="col-md-4">
+    <div class="col-4">
       入力
     </div>
-    <div class="col-md-4">
+    <div class="col-4">
       確認
     </div>
-    <div class="col-md-4">
+    <div class="col-4">
       完了
     </div>
   </div>
@@ -22,223 +22,227 @@
     ※印の項目は必須項目となります
   </div>
 
-  <form>
+  <div class="row">
 
-    <div class="form-group row">
-      <label for="" class="col-sm-3 col-form-label">お名前※</label>
-      <div class="col-sm-9">
-        <input type="text" class="form-control" id="" required>
-      </div>
-    </div>
+    <form class="col-lg-10 offset-lg-1">
 
-    <div class="form-group row">
-      <label for="" class="col-sm-3 col-form-label">フリガナ※</label>
-      <div class="col-sm-9">
-        <input type="text" class="form-control" id="" required>
-      </div>
-    </div>
-
-    <div class="form-group row">
-      <label for="" class="col-sm-3 col-form-label">生年月日※</label>
-      <div class="col-sm-9">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="row">
-              <div class="col-md-10">
-                <input type="text" class="form-control" id="" required>
-              </div>
-              <div class="col-md-2 d-flex align-items-center">
-                <span>年</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="row">
-              <div class="col-md-10">
-                <input type="text" class="form-control" id="" required>
-              </div>
-              <div class="col-md-2 d-flex align-items-center">
-                <span>月</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="row">
-              <div class="col-md-10">
-                <input type="text" class="form-control" id="" required>
-              </div>
-              <div class="col-md-2 d-flex align-items-center">
-                <span>日</span>
-              </div>
-            </div>
-          </div>
+      <div class="form-group row">
+        <label for="" class="col-sm-3 col-form-label">お名前※</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="" required>
         </div>
       </div>
-    </div>
 
-    <div class="form-group row">
-      <label for="" class="col-sm-3 col-form-label">性別※</label>
-      <div class="col-sm-9">
-        <div class="row">
-          <div class="col-md-2">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-              <label class="form-check-label" for="exampleRadios1">
-                男性
-              </label>
+      <div class="form-group row">
+        <label for="" class="col-sm-3 col-form-label">フリガナ※</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="" required>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="" class="col-sm-3 col-form-label">生年月日※</label>
+        <div class="col-sm-9">
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <div class="row">
+                <div class="col-10">
+                  <input type="text" class="form-control" id="" required>
+                </div>
+                <div class="col-2 d-flex align-items-center">
+                  <span>年</span>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-md-2">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-              <label class="form-check-label" for="exampleRadios2">
-                女性
-              </label>
+            <div class="col-md-4 mb-3">
+              <div class="row">
+                <div class="col-10">
+                  <input type="text" class="form-control" id="" required>
+                </div>
+                <div class="col-2 d-flex align-items-center">
+                  <span>月</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="row">
+                <div class="col-10">
+                  <input type="text" class="form-control" id="" required>
+                </div>
+                <div class="col-2 d-flex align-items-center">
+                  <span>日</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="form-group row">
-      <label for="" class="col-sm-3 col-form-label">ご住所※</label>
-      <div class="col-sm-9">
-        <div class="row mb-3">
-          <div class="col-md-1 d-flex align-items-center">
-            <label for=""><strong class="h4">&#12306;</strong></label>
-          </div>
-          <div class="col-md-4">
-            <input type="text" class="form-control" required>
+      <div class="form-group row">
+        <label for="" class="col-sm-3 col-form-label">性別※</label>
+        <div class="col-sm-9">
+          <div class="row">
+            <div class="col-3">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                <label class="form-check-label" for="exampleRadios1">
+                  男性
+                </label>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                  女性
+                </label>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row mb-3">
-          <div class="col-md-4">
-            <label for="">都道府県</label>
-            <input type="text" class="form-control" id="" required>
+      </div>
+
+      <div class="form-group row">
+        <label for="" class="col-sm-3 col-form-label">ご住所※</label>
+        <div class="col-sm-9">
+          <div class="row mb-3">
+            <div class="col-1 d-flex align-items-center">
+              <label for=""><strong class="h4">&#12306;</strong></label>
+            </div>
+            <div class="col-md-4 col-11">
+              <input type="text" class="form-control" required>
+            </div>
           </div>
-        </div>
-        <div class="row mb-3">
-          <div class="col">
-            <label for="">市区町村番地</label>
-            <input type="text" class="form-control" id="" required>
+          <div class="row mb-3">
+            <div class="col-md-4">
+              <label for="">都道府県</label>
+              <input type="text" class="form-control" id="" required>
+            </div>
           </div>
-        </div>
-        <div>
           <div class="row mb-3">
             <div class="col">
-              <label for="">マンション・ビル名</label>
+              <label for="">市区町村番地</label>
+              <input type="text" class="form-control" id="" required>
+            </div>
+          </div>
+          <div>
+            <div class="row mb-3">
+              <div class="col">
+                <label for="">マンション・ビル名</label>
+                <input type="text" class="form-control" id="" required>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="" class="col-sm-3 col-form-label">電話番号※</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="" required>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="" class="col-sm-3 col-form-label">メールアドレス※</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="" required>
+          <span class="ml-4 small">▼確認のため再度メールアドレスの入力をお願いします。</span>
+          <input type="text" class="form-control" id="" required>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="" class="col-sm-3 col-form-label">卒業学校名※</label>
+        <div class="col-sm-9">
+          <div class="row">
+            <div class="col-md-6">
               <input type="text" class="form-control" id="" required>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="form-group row">
-      <label for="" class="col-sm-3 col-form-label">電話番号※</label>
-      <div class="col-sm-9">
-        <input type="text" class="form-control" id="" required>
-      </div>
-    </div>
-
-    <div class="form-group row">
-      <label for="" class="col-sm-3 col-form-label">メールアドレス※</label>
-      <div class="col-sm-9">
-        <input type="text" class="form-control" id="" required>
-        <span class="ml-4">▼確認のため再度メールアドレスの入力をお願いします。</span>
-        <input type="text" class="form-control" id="" required>
-      </div>
-    </div>
-
-    <div class="form-group row">
-      <label for="" class="col-sm-3 col-form-label">卒業学校名※</label>
-      <div class="col-sm-9">
-        <div class="row">
-          <div class="col-md-6">
-            <input type="text" class="form-control" id="" required>
+      <div class="form-group row">
+        <label for="" class="col-sm-3 col-form-label">学部・学科※</label>
+        <div class="col-sm-9">
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" class="form-control" id="" required>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="form-group row">
-      <label for="" class="col-sm-3 col-form-label">学部・学科※</label>
-      <div class="col-sm-9">
-        <div class="row">
-          <div class="col-md-6">
-            <input type="text" class="form-control" id="" required>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="form-group row">
-      <label for="" class="col-sm-3 col-form-label">卒業年月日※</label>
-      <div class="col-sm-9">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="row">
-              <div class="col-md-10">
-                <input type="text" class="form-control" id="" required>
-              </div>
-              <div class="col-md-2 d-flex align-items-center">
-                <span>年</span>
+      <div class="form-group row">
+        <label for="" class="col-sm-3 col-form-label">卒業年月日※</label>
+        <div class="col-sm-9">
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <div class="row">
+                <div class="col-10">
+                  <input type="text" class="form-control" id="" required>
+                </div>
+                <div class="col-2 d-flex align-items-center">
+                  <span>年</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="row">
-              <div class="col-md-10">
-                <input type="text" class="form-control" id="" required>
-              </div>
-              <div class="col-md-2 d-flex align-items-center">
-                <span>月</span>
+            <div class="col-md-4 mb-3">
+              <div class="row">
+                <div class="col-10">
+                  <input type="text" class="form-control" id="" required>
+                </div>
+                <div class="col-2 d-flex align-items-center">
+                  <span>月</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="row">
-              <div class="col-md-10">
-                <input type="text" class="form-control" id="" required>
-              </div>
-              <div class="col-md-2 d-flex align-items-center">
-                <span>日</span>
+            <div class="col-md-4 mb-3">
+              <div class="row">
+                <div class="col-10">
+                  <input type="text" class="form-control" id="" required>
+                </div>
+                <div class="col-2 d-flex align-items-center">
+                  <span>日</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="form-group row">
-      <label for="" class="col-sm-3 col-form-label">保有資格※</label>
-      <div class="col-sm-9">
-        <input type="text" class="form-control" id="" required>
+      <div class="form-group row">
+        <label for="" class="col-sm-3 col-form-label">保有資格※</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="" required>
+        </div>
       </div>
-    </div>
 
-    <div class="form-group row">
-      <label for="" class="col-sm-3 col-form-label">保有資格</label>
-      <div class="col-sm-9">
-        <textarea class="form-control" id="" rows="4"></textarea>
+      <div class="form-group row">
+        <label for="" class="col-sm-3 col-form-label">保有資格</label>
+        <div class="col-sm-9">
+          <textarea class="form-control" id="" rows="4"></textarea>
+        </div>
       </div>
-    </div>
 
-    <div class="form-group row">
-      <label for="" class="col-sm-3 col-form-label">応募動機</label>
-      <div class="col-sm-9">
-        <textarea class="form-control" id="" rows="4"></textarea>
+      <div class="form-group row">
+        <label for="" class="col-sm-3 col-form-label">応募動機</label>
+        <div class="col-sm-9">
+          <textarea class="form-control" id="" rows="4"></textarea>
+        </div>
       </div>
-    </div>
 
-    <div class="form-group row">
-      <label for="" class="col-sm-3 col-form-label">希望・質問</label>
-      <div class="col-sm-9">
-        <textarea class="form-control" id="" rows="4"></textarea>
+      <div class="form-group row">
+        <label for="" class="col-sm-3 col-form-label">希望・質問</label>
+        <div class="col-sm-9">
+          <textarea class="form-control" id="" rows="4"></textarea>
+        </div>
       </div>
-    </div>
 
-  </form>
+    </form>
+
+  </div>
 
 </div>
 {{ end }}
