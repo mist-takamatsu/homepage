@@ -1,5 +1,6 @@
 {{ define "head" }}
   <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+  <script src="{{ .Site.BaseURL }}js/entry/defult.js"></script>
 {{ end }}
 
 {{ define "main" }}
@@ -90,7 +91,7 @@
               <div class="row">
                 <div class="col-3">
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" title="性別※" id="gender_man" name="gender" value="男性">
+                    <input class="form-check-input" type="radio" id="gender_man" name="gender" value="男性">
                     <label class="form-check-label">
                       男性
                     </label>
@@ -98,7 +99,7 @@
                 </div>
                 <div class="col-3">
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" title="性別※" id="gender_woman" name="gender" value="女性">
+                    <input class="form-check-input" type="radio" id="gender_woman" name="gender" value="女性">
                     <label class="form-check-label">
                       女性
                     </label>
@@ -212,7 +213,7 @@
             <div class="col-sm-9 order-sm-3">
               <input type="text" class="form-control" id="email" name="email">
               <span class="ml-4 small">▼確認のため再度メールアドレスの入力をお願いします。</span>
-              <input type="text" title="確認用メールアドレス" class="form-control" id="email_confirem" name="email_confirem">
+              <input type="text" class="form-control" id="email_confirem" name="email_confirem">
             </div>
             <div class="col-sm-9 offset-sm-3 order-sm-1 d-none" id="feedback_email">
               <span class="ml-4 small text-danger" id="feedback_email_message">メールアドレスは必須です</span>
