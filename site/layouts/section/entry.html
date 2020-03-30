@@ -30,7 +30,7 @@
     </div>
   </div>
 
-  <form name="entry" action="/entry_done" method="POST" data-netlify="true">
+  <form name="entry" action="/entry_done" onsubmit="return false;" method="POST" data-netlify="true">
 
     <!-- 入力画面 -->
     <div id="form_input">
@@ -395,7 +395,7 @@
           <a class="btn" id="button_back_input" href="#" role="button">戻る</a>
         </div>
         <div class="col-4 text-center">
-          <button class="btn btn-primary" type="submit">送信</button>
+          <input class="btn btn-primary" type="button" value="送信" onclick="submit();">
         </div>
       </div>
 
