@@ -1,8 +1,9 @@
-$(function() {
-	$(document).on("keypress", "input:not(.allow_submit)", function(event) {
-		return event.which !== 13;
-	});
-});
+document.onkeypress = submit_cancel;
+function submit_cancel() {
+	if (window.event.keyCode == 13) {
+		return false;
+	}
+}
 
 
 document.getElementById("email").onkeyup = function() {
