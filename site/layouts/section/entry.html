@@ -63,39 +63,8 @@
 
           <div class="form-group row">
             <label class="col-sm-3 col-form-label">生年月日※</label>
-            <div class="col-sm-9">
-              <div class="row">
-                <div class="col-md-4 mb-3">
-                  <div class="row">
-                    <div class="col-10">
-                      <input type="text" class="form-control" id="birth_y" name="birth_y" required>
-                    </div>
-                    <div class="col-2 d-flex align-items-center">
-                      <span>年</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                  <div class="row">
-                    <div class="col-10">
-                      <input type="text" class="form-control" id="birth_m" name="birth_m" required>
-                    </div>
-                    <div class="col-2 d-flex align-items-center">
-                      <span>月</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                  <div class="row">
-                    <div class="col-10">
-                      <input type="text" class="form-control" id="birth_d" name="birth_d" required>
-                    </div>
-                    <div class="col-2 d-flex align-items-center">
-                      <span>日</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="col-sm-3">
+              <input type=date class="form-control" id="birth_date" name="birth_date" required>
             </div>
           </div>
 
@@ -131,13 +100,62 @@
                   <label for="address_code"><strong class="h4">&#12306;</strong></label>
                 </div>
                 <div class="col-md-4 col-11">
-                  <input type="text" class="form-control" id="address_code" name="address_code" required>
+                  <input type="number" class="form-control" id="address_code" name="address_code" required>
                 </div>
               </div>
               <div class="row mb-3">
                 <div class="col-md-4">
                   <label for="address_ken">都道府県</label>
-                  <input type="text" class="form-control" id="address_ken" name="address_ken" required>
+                  <select class="form-control" id="address_ken" name="address_ken" required>
+                    <option></option>
+                    <option>北海道</option>
+                    <option>青森県</option>
+                    <option>岩手県</option>
+                    <option>宮城県</option>
+                    <option>秋田県</option>
+                    <option>山形県</option>
+                    <option>福島県</option>
+                    <option>茨城県</option>
+                    <option>栃木県</option>
+                    <option>群馬県</option>
+                    <option>埼玉県</option>
+                    <option>千葉県</option>
+                    <option>東京都</option>
+                    <option>神奈川県</option>
+                    <option>新潟県</option>
+                    <option>富山県</option>
+                    <option>石川県</option>
+                    <option>福井県</option>
+                    <option>山梨県</option>
+                    <option>長野県</option>
+                    <option>岐阜県</option>
+                    <option>静岡県</option>
+                    <option>愛知県</option>
+                    <option>三重県</option>
+                    <option>滋賀県</option>
+                    <option>京都府</option>
+                    <option>大阪府</option>
+                    <option>兵庫県</option>
+                    <option>奈良県</option>
+                    <option>和歌山県</option>
+                    <option>鳥取県</option>
+                    <option>島根県</option>
+                    <option>岡山県</option>
+                    <option>広島県</option>
+                    <option>山口県</option>
+                    <option>徳島県</option>
+                    <option>香川県</option>
+                    <option>愛媛県</option>
+                    <option>高知県</option>
+                    <option>福岡県</option>
+                    <option>佐賀県</option>
+                    <option>長崎県</option>
+                    <option>熊本県</option>
+                    <option>大分県</option>
+                    <option>宮崎県</option>
+                    <option>鹿児島県</option>
+                    <option>沖縄県</option>
+                  </select>
                 </div>
               </div>
               <div class="row mb-3">
@@ -160,16 +178,16 @@
           <div class="form-group row">
             <label for="phone_number" class="col-sm-3 col-form-label">電話番号※</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control" id="phone_number" name="phone_number" required>
+              <input type="tel" class="form-control" id="phone_number" name="phone_number" required>
             </div>
           </div>
 
           <div class="form-group row">
             <label for="email" class="col-sm-3 col-form-label">メールアドレス※</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control" id="email" name="email" required>
+              <input type="email" class="form-control" id="email" name="email" required>
               <span class="ml-4 small">▼確認のため再度メールアドレスの入力をお願いします。</span>
-              <input type="text" class="form-control" id="" name="email_confirem" required>
+              <input type="email" class="form-control" id="" name="email_confirem" required>
             </div>
           </div>
 
@@ -197,29 +215,8 @@
 
           <div class="form-group row">
             <label class="col-sm-3 col-form-label">卒業年月※</label>
-            <div class="col-sm-9">
-              <div class="row">
-                <div class="col-md-4 mb-3">
-                  <div class="row">
-                    <div class="col-10">
-                      <input type="text" class="form-control" id="school_graduate_y" name="school_graduate_y" required>
-                    </div>
-                    <div class="col-2 d-flex align-items-center">
-                      <span>年</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                  <div class="row">
-                    <div class="col-10">
-                      <input type="text" class="form-control" id="school_graduate_m" name="school_graduate_m" required>
-                    </div>
-                    <div class="col-2 d-flex align-items-center">
-                      <span>月</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="col-sm-3">
+              <input type="month" class="form-control" id="school_graduate_month" name="school_graduate_month" required>
             </div>
           </div>
 
@@ -302,7 +299,7 @@
           </tr>
           <tr>
             <th scope="row" class="table-secondary font-weight-normal text-nowrap">生年月日</th>
-            <td id="t_birth_ymd"></td>
+            <td id="t_birth_date"></td>
           </tr>
           <tr>
             <th scope="row" class="table-secondary font-weight-normal text-nowrap">性別</th>
@@ -339,7 +336,7 @@
           </tr>
           <tr>
             <th scope="row" class="table-secondary font-weight-normal text-nowrap">卒業年月</th>
-            <td id="t_school_graduate_ym"></td>
+            <td id="t_school_graduate_month"></td>
           </tr>
           <tr>
             <th scope="row" class="table-secondary font-weight-normal text-nowrap">保有資格</th>
