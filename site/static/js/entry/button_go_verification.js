@@ -129,6 +129,9 @@ document.getElementById("button_go_verification").onclick = function () {
     if (question) t_question.innerHTML = question;
   
     // ページ切り替え
+    const title = document.getElementById("title");
+    title.innerHTML = "確認"
+
     const pager_input = document.getElementById("pager_input");
 		const pager_verification = document.getElementById("pager_verification");
     pager_input.classList.add("text-muted");

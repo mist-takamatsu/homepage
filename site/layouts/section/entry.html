@@ -7,7 +7,7 @@
 
 <div class="container">
 
-  <h1 class="my-5 text-center">エントリーホーム</h1>
+  <h1 class="my-5 text-center" id="title">エントリーホーム</h1>
 
   <div class="row my-5">
     <div class="col-lg-2 col-3 offset-lg-2 text-center align-items-center font-weight-bold" id="pager_input">
@@ -31,7 +31,7 @@
     </div>
   </div>
 
-  <form name="entry">
+  <form name="entry" method="POST" action="{{ .Site.BaseURL }}/entry_done" data-netlify-recaptcha="true" data-netlify="true">
 
     <!-- 入力画面 -->
     <div id="form_input">

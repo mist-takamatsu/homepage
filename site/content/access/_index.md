@@ -1,5 +1,5 @@
 ---
 title: "access"
 description: >-
-  ABOUTページ
+  アクセスページ
 ---

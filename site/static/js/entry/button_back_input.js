@@ -1,5 +1,8 @@
 document.getElementById("button_back_input").onclick = function() {
   // ページ切り替え
+  const title = document.getElementById("title");
+  title.innerHTML = "エントリーホーム";
+
   const pager_input = document.getElementById("pager_input");
 	const pager_verification = document.getElementById("pager_verification");
 	pager_input.classList.remove("text-muted");

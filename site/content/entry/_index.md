@@ -1,5 +1,5 @@
 ---
 title: "entry"
 description: >-
-  ABOUTページ
+  エントリーページ
 ---

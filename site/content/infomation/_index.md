@@ -1,5 +1,5 @@
 ---
 title: "infomation"
 description: >-
-  ABOUTページ
+  インフォメーションページ
 ---

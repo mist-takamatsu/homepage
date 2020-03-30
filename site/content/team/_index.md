@@ -1,5 +1,5 @@
 ---
 title: "team"
 description: >-
-  ABOUTページ
+  チームページ
 ---
