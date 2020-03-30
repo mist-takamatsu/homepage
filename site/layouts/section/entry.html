@@ -1,3 +1,7 @@
+{{ define "head" }}
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/entry.css">
+{{ end }}
+
 {{ define "main" }}
 
 <div class="container">
@@ -26,10 +30,10 @@
     </div>
   </div>
 
-  <form>
+  <form name="entry">
 
     <!-- 入力画面 -->
-    <div id="input">
+    <div id="form_input">
 
       <div class="row my-5">
         <div class="col-lg-10 offset-lg-1">
@@ -101,7 +105,7 @@
               <div class="row">
                 <div class="col-3">
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gender" id="gender_man" value="option1">
+                    <input class="form-check-input" type="radio" id="gender_man" name="gender" value="男性">
                     <label class="form-check-label" for="gender_man">
                       男性
                     </label>
@@ -109,7 +113,7 @@
                 </div>
                 <div class="col-3">
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gender" id="gender_woman" value="option2">
+                    <input class="form-check-input" type="radio" id="gender_woman" name="gender" value="女性">
                     <label class="form-check-label" for="gender_woman">
                       女性
                     </label>
@@ -138,8 +142,8 @@
               </div>
               <div class="row mb-3">
                 <div class="col">
-                  <label for="address_sity">市区町村番地</label>
-                  <input type="text" class="form-control" id="address_sity" name="address_sity" required>
+                  <label for="address_city">市区町村番地</label>
+                  <input type="text" class="form-control" id="address_city" name="address_city" required>
                 </div>
               </div>
               <div>
@@ -266,7 +270,7 @@
 
           <div class="form-group row">
             <div class="col text-center">
-              <button class="btn btn-primary" type="button">入力内容の確認画面へ</button>
+              <button class="btn btn-primary" id="button_go_verification" type="button">入力内容の確認画面へ</button>
             </div>
           </div>
 
@@ -277,7 +281,7 @@
     </div>
 
     <!-- 確認画面 -->
-    <div id="verification">
+    <div id="form_verification" class="d-none">
 
       <div class="row my-5">
         <div class="col-lg-10 offset-lg-1">
@@ -331,30 +335,33 @@
           </tr>
           <tr>
             <th scope="row" class="table-secondary font-weight-normal text-nowrap">学部・学科</th>
-            <td id=""></td>
+            <td id="t_shcool_faculty"></td>
           </tr>
           <tr>
             <th scope="row" class="table-secondary font-weight-normal text-nowrap">卒業年月</th>
-            <td></td>
+            <td id="t_school_graduate_ym"></td>
           </tr>
           <tr>
             <th scope="row" class="table-secondary font-weight-normal text-nowrap">保有資格</th>
-            <td></td>
+            <td id="t_qualification"></td>
           </tr>
           <tr>
             <th scope="row" class="table-secondary font-weight-normal text-nowrap">応募動機</th>
-            <td></td>
+            <td id="t_motivation"></td>
           </tr>
           <tr>
             <th scope="row" class="table-secondary font-weight-normal text-nowrap">希望・質問</th>
-            <td></td>
+            <td id="t_question"></td>
           </tr>
         </tbody>
       </table>
 
-      <div class="form-group row">
-        <div class="col text-center">
-          <button class="btn btn-primary" type="submit">入力内容の確認画面へ</button>
+      <div class="form-group row my-5">
+        <div class="col-4 text-center">
+          <button class="btn" id="button_back_input" type="button">戻る</button>
+        </div>
+        <div class="col-4 text-center">
+          <button class="btn btn-primary" type="submit">送信</button>
         </div>
       </div>
 
@@ -363,4 +370,9 @@
   </form>
 
 </div>
+{{ end }}
+
+{{ define "script" }}
+  <script src="{{ .Site.BaseURL }}/js/entry/button_go_verification.js"></script>
+  <script src="{{ .Site.BaseURL }}/js/entry/button_back_input.js"></script>
 {{ end }}
