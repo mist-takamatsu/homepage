@@ -1,5 +1,5 @@
 {{ define "head" }}
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/entry.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/entry.css">
   <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
 {{ end }}
 
@@ -31,7 +31,7 @@
     </div>
   </div>
 
-  <form name="entry" method="POST" action="{{ .Site.BaseURL }}/entry_done" data-netlify-recaptcha="true" data-netlify="true">
+  <form name="entry" method="POST" action="{{ .Site.BaseURL }}entry_done" data-netlify-recaptcha="true" data-netlify="true">
 
     <!-- 入力画面 -->
     <div id="form_input">
@@ -408,6 +408,6 @@
 {{ end }}
 
 {{ define "script" }}
-  <script src="{{ .Site.BaseURL }}/js/entry/button_go_verification.js"></script>
-  <script src="{{ .Site.BaseURL }}/js/entry/button_back_input.js"></script>
+  <script src="{{ .Site.BaseURL }}js/entry/button_go_verification.js"></script>
+  <script src="{{ .Site.BaseURL }}js/entry/button_back_input.js"></script>
 {{ end }}
