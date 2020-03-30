@@ -128,11 +128,23 @@ document.getElementById("button_go_verification").onclick = function () {
     if (motivation) t_motivation.innerHTML = motivation;
     if (question) t_question.innerHTML = question;
   
+    // ページ切り替え
+    const pager_input = document.getElementById("pager_input");
+		const pager_verification = document.getElementById("pager_verification");
+    pager_input.classList.add("text-muted");
+    pager_input.classList.remove("font-weight-bold");
+    pager_verification.classList.remove("text-muted");    
+    pager_verification.classList.add("font-weight-bold");
+
     const form_input = document.getElementById("form_input");
     const form_verification = document.getElementById("form_verification");
-
     form_input.classList.add("d-none");
     form_verification.classList.remove("d-none");
+
+    // 後処理
+    document.getElementById("feedback_message").classList.add("d-none");
+  } else {
+    document.getElementById("feedback_message").classList.remove("d-none");
   };
 };
 
