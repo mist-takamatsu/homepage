@@ -49,29 +49,38 @@
         <div class="col-lg-10 offset-lg-1">
 
           <div class="form-group row">
-            <label for="name" class="col-sm-3 col-form-label">お名前※</label>
-            <div class="col-sm-9">
-              <input type="text" class="form-control" id="name" name="name" required>
+            <label for="name" class="col-sm-3 col-form-label order-sm-2">お名前※</label>
+            <div class="col-sm-9 order-sm-3">
+              <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div class="col-sm-9 offset-sm-3 order-sm-1 d-none" id="feedback_name">
+              <span class="ml-4 small text-danger">お名前は必須です</span>
             </div>
           </div>
 
           <div class="form-group row">
-            <label for="name_kn" class="col-sm-3 col-form-label">フリガナ※</label>
-            <div class="col-sm-9">
-              <input type="text" class="form-control" id="name_kn" name="name_kn" required>
+            <label for="name_kn" class="col-sm-3 col-form-label order-sm-2">フリガナ※</label>
+            <div class="col-sm-9 order-sm-3">
+              <input type="text" class="form-control" id="name_kn" name="name_kn">
+            </div>
+            <div class="col-sm-9 offset-sm-3 order-sm-1 d-none" id="feedback_name_kn">
+              <span class="ml-4 small text-danger">フリガナは必須です</span>
             </div>
           </div>
 
           <div class="form-group row">
-            <label class="col-sm-3 col-form-label">生年月日※</label>
-            <div class="col-sm-3">
-              <input type=date class="form-control" id="birth_date" name="birth_date" required>
+            <label class="col-sm-3 col-form-label order-sm-2">生年月日※</label>
+            <div class="col-sm-3 order-sm-3">
+              <input type=date class="form-control" id="birth_date" name="birth_date">
+            </div>
+            <div class="col-sm-9 offset-sm-3 order-sm-1 d-none" id="feedback_birth_date">
+              <span class="ml-4 small text-danger">生年月日は必須です</span>
             </div>
           </div>
 
           <div class="form-group row">
-            <label class="col-sm-3 col-form-label">性別※</label>
-            <div class="col-sm-9">
+            <label class="col-sm-3 col-form-label order-sm-2">性別※</label>
+            <div class="col-sm-9 order-sm-3">
               <div class="row">
                 <div class="col-3">
                   <div class="form-check">
@@ -91,11 +100,14 @@
                 </div>
               </div>
             </div>
+            <div class="col-sm-9 offset-sm-3 order-sm-1 d-none" id="feedback_gender">
+              <span class="ml-4 small text-danger">性別は必須です</span>
+            </div>
           </div>
 
           <div class="form-group row">
-            <label class="col-sm-3 col-form-label">ご住所※</label>
-            <div class="col-sm-9">
+            <label class="col-sm-3 col-form-label order-sm-2">ご住所※</label>
+            <div class="col-sm-9 order-sm-3">
               <div class="row mb-3">
                 <div class="col-1 d-flex align-items-center">
                   <label for="zip01"><strong class="h4">&#12306;</strong></label>
@@ -107,7 +119,7 @@
               <div class="row mb-3">
                 <div class="col-md-4">
                   <label for="pref01">都道府県</label>
-                  <select class="form-control" id="pref01" name="pref01" required>
+                  <select class="form-control" id="pref01" name="pref01">
                     <option></option>
                     <option>北海道</option>
                     <option>青森県</option>
@@ -162,62 +174,80 @@
               <div class="row mb-3">
                 <div class="col">
                   <label for="addr01">市区町村番地</label>
-                  <input type="text" class="form-control" id="addr01" name="addr01" required>
+                  <input type="text" class="form-control" id="addr01" name="addr01">
                 </div>
               </div>
               <div>
                 <div class="row mb-3">
                   <div class="col">
                     <label for="address_building">マンション・ビル名</label>
-                    <input type="text" class="form-control" id="address_building" name="address_building" required>
+                    <input type="text" class="form-control" id="address_building" name="address_building">
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="form-group row">
-            <label for="phone_number" class="col-sm-3 col-form-label">電話番号※</label>
-            <div class="col-sm-9">
-              <input type="tel" class="form-control" id="phone_number" maxlength="11" name="phone_number" required>
+            <div class="col-sm-9 offset-sm-3 order-sm-1 d-none" id="feedback_address">
+              <span class="ml-4 small text-danger">ご住所は必須です</span>
             </div>
           </div>
 
           <div class="form-group row">
-            <label for="email" class="col-sm-3 col-form-label">メールアドレス※</label>
-            <div class="col-sm-9">
-              <input type="email" class="form-control" id="email" name="email" required>
+            <label for="tel" class="col-sm-3 col-form-label order-sm-2">電話番号※</label>
+            <div class="col-sm-9 order-sm-3">
+              <input type="tel" class="form-control" id="tel" maxlength="11" name="tel">
+            </div>
+            <div class="col-sm-9 offset-sm-3 order-sm-1 d-none" id="feedback_tel">
+              <span class="ml-4 small text-danger">電話番号は必須です</span>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="email" class="col-sm-3 col-form-label order-sm-2">メールアドレス※</label>
+            <div class="col-sm-9 order-sm-3">
+              <input type="text" class="form-control" id="email" name="email">
               <span class="ml-4 small">▼確認のため再度メールアドレスの入力をお願いします。</span>
-              <input type="email" class="form-control" id="" name="email_confirem" required>
+              <input type="text" class="form-control" id="" name="email_confirem">
+            </div>
+            <div class="col-sm-9 offset-sm-3 order-sm-1 d-none" id="feedback_email">
+              <span class="ml-4 small text-danger">メールアドレスは必須です</span>
             </div>
           </div>
 
           <div class="form-group row">
-            <label for="school_name" class="col-sm-3 col-form-label">卒業学校名※</label>
-            <div class="col-sm-9">
+            <label for="school_name" class="col-sm-3 col-form-label order-sm-2">卒業学校名※</label>
+            <div class="col-sm-9 order-sm-3">
               <div class="row">
                 <div class="col-md-6">
-                  <input type="text" class="form-control" id="school_name" name="school_name" required>
+                  <input type="text" class="form-control" id="school_name" name="school_name">
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="form-group row">
-            <label for="shcool_faculty" class="col-sm-3 col-form-label">学部・学科※</label>
-            <div class="col-sm-9">
-              <div class="row">
-                <div class="col-md-6">
-                  <input type="text" class="form-control" id="shcool_faculty" name="shcool_faculty" required>
-                </div>
-              </div>
+            <div class="col-sm-9 offset-sm-3 order-sm-1 d-none" id="feedback_school_name">
+              <span class="ml-4 small text-danger">卒業学校名は必須です</span>
             </div>
           </div>
 
           <div class="form-group row">
-            <label class="col-sm-3 col-form-label">卒業年月※</label>
-            <div class="col-sm-3">
-              <input type="month" class="form-control" id="school_graduate_month" name="school_graduate_month" required>
+            <label for="shcool_faculty" class="col-sm-3 col-form-label order-sm-2">学部・学科※</label>
+            <div class="col-sm-9 order-sm-3">
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" id="shcool_faculty" name="shcool_faculty">
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-9 offset-sm-3 order-sm-1 d-none" id="feedback_shcool_faculty">
+              <span class="ml-4 small text-danger">学部・学科は必須です</span>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-sm-3 col-form-label order-sm-2">卒業年月※</label>
+            <div class="col-sm-3 order-sm-3">
+              <input type="month" class="form-control" id="school_graduate_month" name="school_graduate_month">
+            </div>
+            <div class="col-sm-9 offset-sm-3 order-sm-1 d-none" id="feedback_school_graduate_month">
+              <span class="ml-4 small text-danger">卒業年月は必須です</span>
             </div>
           </div>
 
@@ -321,7 +351,7 @@
           </tr>
           <tr>
             <th scope="row" class="table-secondary font-weight-normal text-nowrap">電話番号</th>
-            <td id="t_phone_number"></td>
+            <td id="t_tel"></td>
           </tr>
           <tr>
             <th scope="row" class="table-secondary font-weight-normal text-nowrap">メールアドレス</th>
