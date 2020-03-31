@@ -1,1 +1,4 @@
-hugo.bat
+site/hugo.bat
+site/hugo_server.bat
+site/public
+site/resources
