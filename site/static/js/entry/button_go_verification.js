@@ -15,7 +15,8 @@ document.getElementById("button_go_verification").onclick = function () {
 	const school_graduate_month = document.entry.school_graduate_month.value;
 	const qualification = document.entry.qualification.value;
 	const motivation = document.entry.motivation.value;
-  const question = document.entry.question.value;
+	const question = document.entry.question.value;
+	const privacy_consent = document.entry.privacy_consent.value;
 
   const feedback_name = document.getElementById("feedback_name")
   const feedback_name_kn = document.getElementById("feedback_name_kn");
@@ -109,7 +110,8 @@ document.getElementById("button_go_verification").onclick = function () {
     const t_school_graduate_month = document.getElementById("t_school_graduate_month");
     const t_qualification = document.getElementById("t_qualification");
     const t_motivation = document.getElementById("t_motivation");
-    const t_question = document.getElementById("t_question");
+		const t_question = document.getElementById("t_question");
+		const t_privacy_consent = document.getElementById("t_privacy_consent");
 
     if (name) t_name.innerHTML = name;
     if (name_kn) t_name_kn.innerHTML = name_kn;
@@ -126,7 +128,8 @@ document.getElementById("button_go_verification").onclick = function () {
     if (school_graduate_month) t_school_graduate_month.innerHTML = school_graduate_month;
     if (qualification) t_qualification.innerHTML = qualification;
     if (motivation) t_motivation.innerHTML = motivation;
-    if (question) t_question.innerHTML = question;
+		if (question) t_question.innerHTML = question;
+		if (privacy_consent) t_privacy_consent.innerHTML = privacy_consent;
   
     // ページ切り替え
     const title = document.getElementById("title");

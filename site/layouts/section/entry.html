@@ -1,6 +1,6 @@
 {{ define "head" }}
   <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
-  <script src="{{ .Site.BaseURL }}js/entry/defult.js"></script>
+  <script src="{{ .Site.BaseURL }}js/entry/default.js"></script>
 {{ end }}
 
 {{ define "main" }}
@@ -77,7 +77,7 @@
 
           <div class="form-group row">
             <label for="birth_date" class="col-sm-3 col-form-label order-sm-2">生年月日※</label>
-            <div class="col-sm-3 order-sm-3">
+            <div class="col-lg-3 col-md-4 col-sm-5 order-sm-3">
               <input type=date class="form-control" id="birth_date" name="birth_date">
             </div>
             <div class="col-sm-9 offset-sm-3 order-sm-1 d-none" id="feedback_birth_date">
@@ -250,7 +250,7 @@
 
           <div class="form-group row">
             <label for="school_graduate_month" class="col-sm-3 col-form-label order-sm-2">卒業年月※</label>
-            <div class="col-sm-3 order-sm-3">
+            <div class="col-lg-3 col-md-4 col-sm-5 order-sm-3">
               <input type="month" class="form-control" id="school_graduate_month" name="school_graduate_month">
             </div>
             <div class="col-sm-9 offset-sm-3 order-sm-1 d-none" id="feedback_school_graduate_month">
@@ -288,11 +288,11 @@
               </div>
               <div class="row mb-3">
                 <div class="col-3 offset-1 form-check">
-                  <input type="checkbox" class="form-check-input" id="privacy_consent" name="privacy_consent">
+                  <input type="checkbox" class="form-check-input" id="privacy_consent" name="privacy_consent" value="同意する">
                   <label class="form-check-label" for="privacy_consent">同意する</label>
                 </div>
                 <div class="col-8">
-                  ▼個人情報の取り扱いについて
+                  <a href="https://www.mistnet.co.jp/PersonalInformationHandling.html" target="blank">▼個人情報の取り扱いについて</a>
                 </div>
               </div>
               <div class="row mb-3">
@@ -387,6 +387,10 @@
           <tr>
             <th scope="row" class="table-secondary font-weight-normal text-nowrap">希望・質問</th>
             <td id="t_question"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="table-secondary font-weight-normal text-nowrap">個人情報について</th>
+            <td id="t_privacy_consent"></td>
           </tr>
         </tbody>
       </table>
