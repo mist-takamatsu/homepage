@@ -6,9 +6,45 @@
 
 {{ define "main" }}
 
-<div class="container">
-  <div style="height: 100vh;"></div>
-</div>
+<section id="access"> 
+  <div class="container">
+    <!-- タイトル -->
+    <div class="row justify-content-center">
+      <h1 class="mt-5" id="title">高松支店</h1>
+    </div>
+    <div class="row justify-content-center">
+      <div class="mb-5 border-bottom border-danger title-line"></div>
+    </div>
+
+    <!-- 住所 -->
+    <div class="row justify-content-center">
+      <div class="col-10 mb-2 text-center">
+        <div class="address">
+          <p>〒760-0028<br>
+          香川県高松市鍛冶屋町3番地　<br class="d-inline d-md-none">香川三友ビル7F</p>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-10 text-center address-info">
+        <p>交通機関： JR予讃線高松駅より徒歩15分<br>
+        琴電琴平線瓦町駅・片原町駅より徒歩10分<br>
+        ことでんバス　五番町バス停前</p>
+      </div>
+    </div>
+    <div class="row mb-5 address-info">
+      <p class="col-5 col-lg-3 ml-auto text-center">TEL：087-873-2502</p>
+      <p class="col-5 col-lg-3 mr-auto text-center">FAX：087-873-2502</p>
+    </div>
+
+    <!-- 地図 -->
+    <div class="row justify-content-center">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4865.139292985693!2d134.04684842806913!3d34.34230405470717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3553eb9075c5c4e7%3A0x253bc6e3ca25cf7d!2z44CSNzYwLTAwMjgg6aaZ5bed55yM6auY5p2-5biC6Y2b5Ya25bGL55S677yT4oiS77yRIOmmmeW3neS4ieWPi-ODk-ODqw!5e0!3m2!1sja!2sjp!4v1587269479007!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+
+    <div style="height: 100vh;"></div>
+  </div>
+</section>
 
 {{ end }}
 

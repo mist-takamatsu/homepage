@@ -1,0 +1,16 @@
+/* タイトル */
+#access .title-line {
+    width: 200px;
+}
+
+/* 住所 */
+#access .address p{
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+#access .address-info p{
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
