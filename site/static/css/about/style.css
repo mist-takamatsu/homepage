@@ -1,0 +1,22 @@
+h1 {
+    font-size: calc(3vw);
+}
+
+/* ICTサービス事業 */
+#business .title-line {
+    width: 25vw;
+}
+
+#business .title-info p{
+    font-size: calc(1.5vw);
+}
+
+#business .sub-title p {
+    font-size: calc(1.5vw);
+    color: #d91c3c;
+}
+
+#business .sub-info p {
+    font-size: calc(1.2vw);
+    text-decoration: underline;
+}
