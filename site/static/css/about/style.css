@@ -1,22 +1,76 @@
-h1 {
-    font-size: calc(3vw);
+.about {
+    padding: 0 30px;
 }
 
-/* ICTサービス事業 */
-#business .title-line {
+h1 {
+    /* 24px～36px */
+    font-size: calc(1.5rem + ((1vw - 4.8px) * 0.8333));
+}
+
+.title-line {
     width: 25vw;
 }
 
+/* ICTサービス事業 */
+#business {
+    margin: 0 auto;
+    border-bottom: solid 0.1px #cccccc;
+}
+
 #business .title-info p{
-    font-size: calc(1.5vw);
+    /* 10px～24px */
+    font-size: calc(0.625rem + ((1vw - 4.8px) * 0.9722));
 }
 
 #business .sub-title p {
-    font-size: calc(1.5vw);
+    /* 10px～24px */
+    font-size: calc(0.625rem + ((1vw - 4.8px) * 0.9722));
     color: #d91c3c;
 }
-
 #business .sub-info p {
-    font-size: calc(1.2vw);
+    /* 8px～20px */
+    font-size: calc(0.5rem + ((1vw - 4.8px) * 0.8333));
     text-decoration: underline;
+}
+
+
+/* イベント */
+#event {
+    border-bottom: solid 0.1px #cccccc;
+}
+#event li {
+    list-style: none;
+}
+#event .event-group p {
+    /* 10px～24px */
+    font-size: calc(0.625rem + ((1vw - 4.8px) * 0.9722));
+    text-align: left;
+}
+#event .photo {
+    max-width: 300px;
+    min-width: 150px;
+}
+#event .photo:hover {
+    cursor: pointer;
+}
+#event #Wrap-photo1 {
+    width: 70vw;
+    height: auto;
+    background-color: #f5f5f5;
+}
+
+/* 研修 */
+#training .training-group {
+    list-style: none;
+}
+#training .training-group {
+    /* 10px～24px */
+    font-size: calc(0.625rem + ((1vw - 4.8px) * 0.9722));
+    text-align: left;
+}
+#training .photo {
+    position: relative;
+}
+#training .photo:hover {
+    cursor: pointer;
 }

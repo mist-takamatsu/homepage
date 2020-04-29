@@ -13,53 +13,153 @@
 {{ end }}
 
 {{ define "main" }}
-<section id="business">
-  <div class="container">
-    <!-- ICTサービス事業 -->
-    <div class="row justify-content-center">
-      <h1 class="mt-5">ICTサービス事業</h1>
-    </div>
-    <div class="row justify-content-center">
-      <div class="mb-3 border-bottom border-danger title-line"></div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="mb-3 text-center title-info">
-        <p>高松支店は当社の「ICTサービス本部 関西・四国事業部」に実行体制をおいております。<br>
-          地元企業でICTを活用したソリューションの提供をいたします。</p>
+<section class="about">
+  <section id="business">
+    <div class="container">
+      <!-- ICTサービス事業 -->
+      <div class="row justify-content-center">
+        <h1 class="mt-5">ICTサービス事業</h1>
       </div>
-    </div>
+      <div class="row justify-content-center">
+        <div class="mb-3 border-bottom border-danger title-line"></div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="mb-3 text-center title-info">
+          <p>高松支店は当社の「ICTサービス本部 関西・四国事業部」に実行体制をおいております。<br>
+            地元企業でICTを活用したソリューションの提供をいたします。</p>
+        </div>
+      </div>
 
-    <!-- ICTサービス事業_サブ-->
-    <div class="row sub-title"> 
-      <div class="col-5 ml-auto"><p>システムエンジニアリングサービス</p></div>
-      <div class="col-5 offset-1 mr-auto"><p>受託開発サービス</p></div>
-    </div>
+      <!-- ICTサービス事業_サブ-->
+      <div class="row sub-title"> 
+        <div class="col-5 ml-auto"><p>システムエンジニアリングサービス</p></div>
+        <div class="col-5 offset-1 mr-auto"><p>受託開発サービス</p></div>
+      </div>
 
-    <div class="row sub-img">
-      <div class="col-5 ml-auto mb-3">
-        <img src="../../static/img/about/photo01.jpg" class="img-fluid"> 
+      <div class="row sub-img">
+        <div class="col-5 ml-auto mb-3">
+          <img src="../../static/img/about/business_photo01.jpg" class="img-fluid"> 
+        </div>
+        <div class="col-5 offset-1 mr-auto">
+          <img src="../../static/img/about/business_photo02.jpg" class="img-fluid"> 
+        </div>
       </div>
-      <div class="col-5 offset-1 mr-auto">
-        <img src="../../static/img/about/photo02.jpg" class="img-fluid"> 
-      </div>
-    </div>
 
-    <div class="row sub-info">
-      <div class="col-5 ml-auto">
-        <p>地元の企業様のプロジェクトに貢献しております。
-        プロジェクトにマッチした技術者を紹介し、
-        客先常駐型の開発・保守・事務を行っています。</p>
+      <div class="row sub-info">
+        <div class="col-5 ml-auto">
+          <p>地元の企業様のプロジェクトに貢献しております。
+          プロジェクトにマッチした技術者を紹介し、
+          客先常駐型の開発・保守・事務を行っています。</p>
+        </div>
+        <div class="col-5 offset-1 mr-auto">
+          <p>より多くのお客様のご要望に対応できるように、
+            受託開発サービスを行っております。全社で連携して
+            最適なソリューションを提供いたします。</p>
+        </div> 
       </div>
-      <div class="col-5 offset-1 mr-auto">
-        <p>地元の企業様のプロジェクトに貢献しております。
-        プロジェクトにマッチした技術者を紹介し、
-        客先常駐型の開発・保守・事務を行っています。</p>
+      <div class="mt-5 line"></div>
     </div>  
+  </section>
 
-  </div>
+    <!-- イベント -->
+  <section id="event">
+    <div class="container">
+      <div class="row justify-content-center">
+        <h1 class="mt-5 ">イベント</h1>
+      </div>
+      <div class="row justify-content-center">
+        <div class="mb-4 border-bottom border-danger title-line"></div>
+      </div>
+
+      <ul class="row justify-content-center event-group">
+        <!-- 画像1 -->
+        <li class="col-6 col-md-4 mb-2 photo" data-toggle="collapse" data-target="#Wrap-photo1">
+            <img src="../../static/img/about/event_photo01.jpg" alt="event-img1" class="img-fluid">
+          <p>方針発表会</p>
+          <div class="collapse my-3 jumbotron" id="Wrap-photo1">
+            <img src="../../static/img/about/event_photo01.jpg" alt="event-img1" class="img-fluid">
+          </div>
+        </li>     
+
+        <!-- 画像2 -->
+        <li class="col-6 col-md-4 mb-2 photo" data-toggle="collapse" data-target="#event-photo2">
+            <img src="../../static/img/about/event_photo02.jpg" alt="event-img1" class="img-fluid">
+          <p>社員旅行</p>
+          <div class="collapse my-3 jumbotron" id="event-photo2">
+            <img src="../../static/img/about/event_photo02.jpg" alt="event-img1" class="img-fluid">
+          </div>
+        </li>   
+
+        <!-- 画像3 -->
+        <li class="col-6 col-md-4 mb-2 photo" data-toggle="collapse" data-target="#event-photo3">
+            <img src="../../static/img/about/event_photo03.jpg" alt="event-img1" class="img-fluid">
+          <p>忘年会</p>
+          <div class="collapse my-3 jumbotron" id="event-photo3">
+            <img src="../../static/img/about/event_photo03.jpg" alt="event-img1" class="img-fluid">
+          </div>
+        </li>   
+
+        <!-- 画像4 -->
+        <li class="col-6 col-md-4 mb-2 photo" data-toggle="collapse" data-target="#event-photo4">
+            <img src="../../static/img/about/event_photo04.jpg" alt="event-img1" class="img-fluid">
+          <p>スイカマラソン</p>
+          <div class="collapse my-3 jumbotron" id="event-photo4">
+            <img src="../../static/img/about/event_photo04.jpg" alt="event-img1" class="img-fluid">
+          </div>
+        </li>
+        <!-- 画像5 -->
+        <li class="col-6 col-md-4 mb-2 photo" data-toggle="collapse" data-target="#event-photo5">
+            <img src="../../static/img/about/event_photo04.jpg" alt="event-img1" class="img-fluid">
+          <p>未定</p>
+          <div class="collapse my-3 jumbotron" id="event-photo3">
+            <img src="../../static/img/about/event_photo05.jpg" alt="event-img1" class="img-fluid">
+          </div>
+        </li>
+        <!-- 画像6 -->
+        <li class="col-6 col-md-4 mb-2 photo" data-toggle="collapse" data-target="#event-photo6">
+            <img src="../../static/img/about/event_photo04.jpg" alt="event-img1" class="img-fluid">
+          <p>未定</p>
+          <div class="collapse my-3 jumbotron" id="event-photo6">
+            <img src="../../static/img/about/event_photo06.jpg" alt="event-img1" class="img-fluid">
+          </div>
+        </li>
+      </ul>
+      <div class="mt-5 line"></div>
+    </div>
+  </section>
+
+  <!-- 研修 -->
+  <section id="training">
+    <div class="container">
+      <div class="row justify-content-center">
+        <h1 class="mt-5 ">研修</h1>
+      </div>      
+      <div class="row justify-content-center">
+        <div class="mb-4 border-bottom border-danger title-line"></div>
+      </div>
+      <ul class="row justify-content-center training-Group">
+        <li class="col-6 mb-2 photo" data-toggle="collapse" data-target="#training-photo1">
+          <img src="../../static/img/about/training_photo01.jpg" alt="training-img1" class="img-fluid">
+          <p>Javaの研修</p>
+          <div class="collapse my-3 jumbotron" id="training-photo1">
+            <img src="../../static/img/about/training_photo01.jpg" alt="training-img1_1" class="img-fluid">
+          </div>
+        </li>
+        <li class="col-6 mb-2 photo" data-toggle="collapse" data-target="#training-photo2">
+          <img src="../../static/img/about/training_photo01.jpg" alt="training-img2" class="img-fluid">
+          <p>未定</p>
+          <div class="collapse my-3 jumbotron" id="training-photo2">
+            <img src="../../static/img/about/training_photo01.jpg" alt="event-img3" class="img-fluid">
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
 </section>
 
+
 <!-- bootstrap適用 削除予定↓ --------------------------------------------------->
+<script src="../../static/js/about/main.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -72,7 +172,6 @@
 {{ end }}
 
 {{ define "script" }}
-
-<script src="{{ .Site.BaseURL }}js/about/main.js"></script>
+<!-- <script src="{{ .Site.BaseURL }}js/about/main.js"></script> -->
   
 {{ end }}
