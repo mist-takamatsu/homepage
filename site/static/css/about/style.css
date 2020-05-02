@@ -60,16 +60,13 @@ h1 {
 }
 
 /* 研修 */
-#training .training-group {
+#training li {
     list-style: none;
 }
-#training .training-group {
+#training .training-Group p {
     /* 10px～24px */
     font-size: calc(0.625rem + ((1vw - 4.8px) * 0.9722));
     text-align: left;
-}
-#training .photo {
-    position: relative;
 }
 #training .photo:hover {
     cursor: pointer;
