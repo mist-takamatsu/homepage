@@ -36,38 +36,30 @@ h1 {
 
 /* イベント */
 #event {
+    margin: 0 auto;
     border-bottom: solid 0.1px #cccccc;
 }
-#event li {
-    list-style: none;
+#event .photo img{
+    
 }
-#event .event-group p {
+#event .e-txt h5 {
+    /* 16px～30px */
+    font-size: calc(1rem + ((1vw - 7.68px) * 1.2153));
+    font-weight: bole;
+}
+#event .e-txt p{
     /* 10px～24px */
     font-size: calc(0.625rem + ((1vw - 4.8px) * 0.9722));
-    text-align: left;
-}
-#event .photo {
-    max-width: 300px;
-    min-width: 150px;
-}
-#event .photo:hover {
-    cursor: pointer;
-}
-#event #Wrap-photo1 {
-    width: 70vw;
-    height: auto;
-    background-color: #f5f5f5;
 }
 
 /* 研修 */
-#training li {
-    list-style: none;
+#training h5 {
+    /* 16px～30px */
+    font-size: calc(1rem + ((1vw - 7.68px) * 1.2153));
+    font-weight: bole;
 }
 #training .training-Group p {
     /* 10px～24px */
     font-size: calc(0.625rem + ((1vw - 4.8px) * 0.9722));
     text-align: left;
-}
-#training .photo:hover {
-    cursor: pointer;
 }

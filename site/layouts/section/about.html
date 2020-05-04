@@ -1,23 +1,5 @@
 {{ define "head" }}
-<!-- bootstrap適用 削除予定 ↓ ----------------------------------------------->
-<!-- <!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
-
-<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="../../static/js/about/main.js"></script> -->
-<!-- </head>
-<body>  -->
-<!-- ここまで削除予定 ------------------------------------------------------->
-
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/about/style.css">
-<!-- <link rel="stylesheet" href="../../static/css/about/style.css"> -->
 
 {{ end }}
 
@@ -80,60 +62,79 @@
         <div class="mb-4 border-bottom border-danger title-line"></div>
       </div>
 
-      <ul class="row justify-content-center event-group">
-        <!-- 画像1 -->
-        <li class="col-6 col-md-4 mb-2 photo" data-toggle="collapse" data-target="#Wrap-photo1">
-            <img src="{{ .Site.BaseURL }}img/about/event_photo01.jpg" alt="event-img1" class="img-fluid">
-          <p>方針発表会</p>
-          <div class="collapse my-3 jumbotron" id="Wrap-photo1">
-            <img src="{{ .Site.BaseURL }}img/about/event_photo01.jpg" alt="event-img1" class="img-fluid">
-          </div>
-        </li>     
-
-        <!-- 画像2 -->
-        <li class="col-6 col-md-4 mb-2 photo" data-toggle="collapse" data-target="#event-photo2">
-            <img src="{{ .Site.BaseURL }}img/about/event_photo02.jpg" alt="event-img1" class="img-fluid">
-          <p>社員旅行</p>
-          <div class="collapse my-3 jumbotron" id="event-photo2">
-            <img src="{{ .Site.BaseURL }}img/about/event_photo02.jpg" alt="event-img1" class="img-fluid">
-          </div>
-        </li>   
-
-        <!-- 画像3 -->
-        <li class="col-6 col-md-4 mb-2 photo" data-toggle="collapse" data-target="#event-photo3">
-            <img src="{{ .Site.BaseURL }}img/about/event_photo03.jpg" alt="event-img1" class="img-fluid">
-          <p>忘年会</p>
-          <div class="collapse my-3 jumbotron" id="event-photo3">
-            <img src="{{ .Site.BaseURL }}img/about/event_photo03.jpg" alt="event-img1" class="img-fluid">
-          </div>
-        </li>   
-
-        <!-- 画像4 -->
-        <li class="col-6 col-md-4 mb-2 photo" data-toggle="collapse" data-target="#event-photo4">
-            <img src="{{ .Site.BaseURL }}img/about/event_photo04.jpg" alt="event-img1" class="img-fluid">
-          <p>スイカマラソン</p>
-          <div class="collapse my-3 jumbotron" id="event-photo4">
-            <img src="{{ .Site.BaseURL }}img/about/event_photo04.jpg" alt="event-img1" class="img-fluid">
-          </div>
+      <ul class="nav nav-pills nav-fill">
+        <li class="nav-item">
+          <a href = "#e-tab01" class="nav-link active" data-toggle="pill">Recital</a>
         </li>
-        <!-- 画像5 -->
-        <li class="col-6 col-md-4 mb-2 photo" data-toggle="collapse" data-target="#event-photo5">
-            <img src="{{ .Site.BaseURL }}img/about/event_photo04.jpg" alt="event-img1" class="img-fluid">
-          <p>未定</p>
-          <div class="collapse my-3 jumbotron" id="event-photo3">
-            <img src="{{ .Site.BaseURL }}img/about/event_photo05.jpg" alt="event-img1" class="img-fluid">
-          </div>
+        <li class="nav-item">
+          <a href = "#e-tab02" class="nav-link" data-toggle="pill">Trip</a>
         </li>
-        <!-- 画像6 -->
-        <li class="col-6 col-md-4 mb-2 photo" data-toggle="collapse" data-target="#event-photo6">
-            <img src="{{ .Site.BaseURL }}img/about/event_photo04.jpg" alt="event-img1" class="img-fluid">
-          <p>未定</p>
-          <div class="collapse my-3 jumbotron" id="event-photo6">
-            <img src="{{ .Site.BaseURL }}mg/about/event_photo06.jpg" alt="event-img1" class="img-fluid">
-          </div>
+        <li class="nav-item">
+          <a href = "#e-tab03" class="nav-link" data-toggle="pill">Party</a>
+        </li>
+        <li class="nav-item">
+          <a href = "#e-tab04" class="nav-link" data-toggle="pill">Sports</a>
         </li>
       </ul>
-      <div class="mt-5 line"></div>
+
+      <div class="tab-content">
+        <!-- 画像1 -->
+        <div class="tab-pane fade show active" id="e-tab01">
+          <div class="row">
+              <div class="photo col-4 my-3">
+                <img src="{{ .Site.BaseURL }}img/about/event_photo01.jpg" alt="event-img1" class="img-fluid">
+              </div>
+              <div class="col-8 my-3 e-txt">  
+                <h5 class="mb-2 mb-sm-3">方針発表会</h5>
+                <p>毎年期末に全社で、今期実績や来期の方針を確認しています。この時は高松支店メンバーも
+                  全員東京へ行きます。
+                  本社の方たちと交流できる良い機会！面白くて優しい方たちばかりでした！</p>
+              </div>          
+          </div>
+        </div> 
+
+        <!-- 画像2 -->
+        <div class="tab-pane fade" id="e-tab02">
+          <div class="row">
+            <div class="photo col-4 my-3">
+              <img src="{{ .Site.BaseURL }}img/about/event_photo02.jpg" alt="event-img1" class="img-fluid">
+            </div>
+            <div class="col-8 my-3 e-txt">  
+              <h5 class="mb-2 mb-sm-3">社員旅行</h5>
+              <p>23期は富山に行ってきました。世界遺産の「相倉合掌造り集落」を観光したり、旅館の温泉
+                で日々の疲れを癒しました。夜はみんなでワイワイ飲み会！</p>
+            </div>          
+          </div>     
+        </div>   
+
+        <!-- 画像3 -->
+        <div class="tab-pane fade" id="e-tab03">
+          <div class="row">
+            <div class="photo col-4 my-3">
+              <img src="{{ .Site.BaseURL }}img/about/event_photo03.jpg" alt="event-img1" class="img-fluid">
+            </div>
+            <div class="col-8 my-3 e-txt">  
+              <h5 class="mb-2 mb-sm-3">忘年会</h5>
+              <p>本社は納会をしていますが、高松支店では毎年高松メンバー全員で忘年会をしています。
+                今期はスペシャルゲストとして、社長・協力会社の方たちにも参加していただきました。
+                飲みすぎ注意です！</p>
+            </div>          
+          </div>       
+        </div> 
+
+        <!-- 画像4 -->
+        <div class="tab-pane fade" id="e-tab04">
+          <div class="row">
+            <div class="photo col-4 my-3">
+              <img src="{{ .Site.BaseURL }}img/about/event_photo04.jpg" alt="event-img1" class="img-fluid">
+            </div>
+            <div class="col-8 my-3 e-txt">  
+              <h5 class="mb-2 mb-sm-3">スイカマラソン</h5>
+              <p></p>
+            </div>          
+          </div>        
+        </div> 
+      </div>
     </div>
   </section>
 
@@ -147,35 +148,25 @@
         <div class="mb-4 border-bottom border-danger title-line"></div>
       </div>
 
-      <ul class="row justify-content-center training-Group">
-        <li class="col-6 mb-2 photo" data-toggle="collapse" data-target="#training-photo1">
+      <div class="row justify-content-center training-Group">
+        <div class="col-5 mb-2 photo" data-toggle="collapse" data-target="#training-photo1">
           <img src="{{ .Site.BaseURL }}img/about/training_photo01.jpg" alt="training-img1" class="img-fluid">
-          <p>Javaの研修</p>
-          <div class="collapse my-3 jumbotron" id="training-photo1">
-            <img src="{{ .Site.BaseURL }}img/about/training_photo01.jpg" alt="training-img1_1" class="img-fluid">
-          </div>
-        </li>
-        <li class="col-6 mb-2 photo" data-toggle="collapse" data-target="#training-photo2">
-          <img src="{{ .Site.BaseURL }}img/about/training_photo01.jpg" alt="training-img2" class="img-fluid">
-          <p>未定</p>
-          <div class="collapse my-3 jumbotron" id="training-photo2">
-            <img src="{{ .Site.BaseURL }}img/about/training_photo01.jpg" alt="training-img3" class="img-fluid">
-          </div>
-        </li>
-      </ul>
+        </div>
+        <div class="col-5">
+          <h5>Javaの勉強会</h5>
+          <p>実践的な言語学習を支援するため、月1,2回ほど社内で集まりJavaの勉強会を開催していま
+            す。学習内容は実際にPCを使用し、アプリケーションの作成をしていきます。</p>
+        </div>
+
+      </div>
 
     </div>
   </section>
 </section>
 
-<!-- 削除予定 -->
-<!-- </body>
-</html> -->
-<!-- 削除予定_ここまで -->
-
-<!-- <div class="container"> -->
+<div class="container">
   <div style="height: 100vh;"></div>
-<!-- </div> -->
+</div>
 
 {{ end }}
 
