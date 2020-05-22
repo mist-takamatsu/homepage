@@ -1,0 +1,30 @@
+.circle{
+  display: inline-block;
+  width: 10rem;
+  height: 10rem;
+  text-align:center;
+  line-height: 10rem;
+  border-radius: 50%;
+  background: #ff5050;
+  color: #ffffff;
+}
+
+.line-circle{
+  display: inline-block;
+  width: 10rem;
+  height: 10rem;
+  text-align:center;
+  line-height: 10rem;
+  border-radius: 50%;
+  border: solid 0.2rem #ff5050;
+  color: #ff5050;
+}
+
+.line{
+  border: solid 0.1rem #ff5050;
+}
+
+.border-bottom-red{
+  width: 3rem;
+  border-bottom: solid 0.1rem #d91c3c;
+}
