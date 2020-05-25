@@ -20,11 +20,26 @@
   color: #ff5050;
 }
 
-.line{
+.line-connect{
   border: solid 0.1rem #ff5050;
 }
 
 .border-bottom-red{
-  width: 3rem;
-  border-bottom: solid 0.1rem #d91c3c;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+/*以下で線を表示*/
+.border-bottom-red:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -15px;/*線の上下位置*/
+  display: inline-block;
+  width: 70%;/*線の長さ*/
+  height: 0.1rem;/*線の太さ*/
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);/*位置調整*/
+  background-color: #d91c3c;/*線の色*/
 }
