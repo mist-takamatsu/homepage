@@ -1,28 +1,28 @@
+{{ define "head" }}
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/entry/style.css">
+{{ end }}
+
 {{ define "main" }}
 
 <div class="container">
 
-  <h1 class="my-5 text-center">完了</h1>
-
-  <div class="row my-5">
-    <div class="col-lg-2 col-3 offset-lg-2 text-center align-items-center text-muted">
-      入力
+  <h1 class="mt-5 text-center" id="title"><span class="border-bottom-red">完了</span></h1>
+  
+  <div class="row d-flex align-items-center">
+    <div class="col-2 offset-lg-1 text-center align-items-center" id="pager_input">
+      <div class="circle h2">入力</div>
     </div>
-    <div class="col-1 text-center align-items-center text-muted">
-      <svg class="bi bi-chevron-right" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L10.293 8 4.646 2.354a.5.5 0 010-.708z" clip-rule="evenodd" />
-      </svg>
+    <div class="col-lg-2 col-3">
+      <hr class="line-connect">
     </div>
-    <div class="col-lg-2 col-4 text-center align-items-center text-muted">
-      確認
+    <div class="col-2 text-center align-items-center" id="pager_verification">
+      <div class="circle h2">確認</div>
     </div>
-    <div class="col-1 text-center align-items-center text-muted">
-      <svg class="bi bi-chevron-right" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L10.293 8 4.646 2.354a.5.5 0 010-.708z" clip-rule="evenodd" />
-      </svg>
+    <div class="col-lg-2 col-3">
+      <hr class="line-connect">
     </div>
-    <div class="col-lg-2 col-3 text-center align-items-center font-weight-bold">
-      完了
+    <div class="col-2 text-center align-items-center" id="pager_done">
+      <div class="circle h2">完了</div>
     </div>
   </div>
 
