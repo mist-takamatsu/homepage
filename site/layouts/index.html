@@ -1,65 +1,24 @@
-<!DOCTYPE html>
-<html>
+{{ define "head" }}
 
-<head>
-  <title>MISTsolution 高松支店</title>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <meta name="robots" content="noindex" />
-  <!-- css -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300,700,800" rel="stylesheet" media="screen">
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/top/style.css">
 
-  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-  <link href="css/style.css" rel="stylesheet" media="screen">
-  <link href="color/default.css" rel="stylesheet" media="screen">
+{{ end }}
 
-</head>
-
-<body>
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-default fixed-to-top" role="navigation" style="display: block;">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-          <span class="sr-only">Toggle nav</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-
-        <!-- Logo text or image -->
-        <a class="navbar-brand" href="index.html">Alstar</a>
-
-      </div>
-      <div class="navigation collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav">
-          <li class="current"><a href="javascript:void(0)">Home</a></li>
-          <li><a href="javascript:void(0)">About</a></li>
-          <li><a href="javascript:void(0)">Service</a></li>
-          <li><a href="javascript:void(0)">Works</a></li>
-          <li><a href="javascript:void(0)">Team</a></li>
-          <li><a href="javascript:void(0)">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+{{ define "main" }}
 
   <!-- intro area -->
   <section id="intro">
     <div class="intro-container">
       <div id="introCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-
         <div class="carousel-inner" role="listbox">
-
-          <!-- Slide 1 -->
           <div class="item active">
             <div class="carousel-background"><img src="img/about-img.jpg" alt=""></div>
           </div>
         </div>
       </div>
     </div>
-  </section><!-- #intro -->
+  </section>
+  <!-- #intro -->
 
   <!-- Team -->
   <section id="team" class="home-section bg-white">
@@ -158,9 +117,6 @@
       <div class="row">
         <div class="col-md-12">
           <p>Copyright &copy; Alstar. All rights reserved.</p>
-          <div class="credits">
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-          </div>
         </div>
       </div>
     </div>
@@ -168,21 +124,10 @@
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-  <!-- js -->
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/jquery.scrollTo.min.js"></script>
-  <script src="js/jquery.nav.js"></script>
-  <script src="js/modernizr.custom.js"></script>
-  <script src="js/grid.js"></script>
-  <script src="js/stellar.js"></script>
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
+  {{ end }}
 
-  <!-- Template Custom Javascript File -->
-  <script src="js/custom.js"></script>
-
-</body>
-
-</html>
+  {{ define "script" }}
+  
+  <script src="{{ .Site.BaseURL }}js/top/main.js"></script>
+  
+  {{ end }}
