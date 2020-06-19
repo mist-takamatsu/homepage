@@ -135,12 +135,9 @@ document.getElementById("button_go_verification").onclick = function () {
     const title = document.getElementById("title");
     title.innerHTML = "確認"
 
-    const pager_input = document.getElementById("pager_input");
 		const pager_verification = document.getElementById("pager_verification");
-    pager_input.classList.add("text-muted");
-    pager_input.classList.remove("font-weight-bold");
-    pager_verification.classList.remove("text-muted");    
-    pager_verification.classList.add("font-weight-bold");
+    pager_verification.classList.remove("line-circle");    
+    pager_verification.classList.add("circle");
 
     const form_input = document.getElementById("form_input");
     const form_verification = document.getElementById("form_verification");
@@ -155,6 +152,7 @@ document.getElementById("button_go_verification").onclick = function () {
 };
 
 document.getElementById("email").onkeyup = function() {
+
 	ConfiremEmail();
 };
 
