@@ -1,16 +1,30 @@
-/* タイトル */
-#access .title-line {
-    width: 200px;
+@media (max-width: 767px) {
+    #access h1 {
+        font-size: 26px
+    }
+    #access .address {
+        font-size: 18px;
+    }
+    #access .address-info {
+        font-size: 16px;
+    }
+}
+@media (min-width: 768px) {
+    #access h1 {
+        font-size: 30px
+    }
+    #access .address {
+        font-size: 24px;
+    }
+    #access .address-info {
+        font-size: 20px;
+    }
+}
+.access_title {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding: 10px;
+    border-bottom: solid 1px red;
 }
 
-/* 住所 */
-#access .address p{
-    font-size: 1.5rem;
-    line-height: 2;
-}
-
-#access .address-info p{
-    font-size: 1.2rem;
-    line-height: 2;
-}
 
