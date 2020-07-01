@@ -1,23 +1,26 @@
 .circle{
-  display: inline-block;
-  width: 10rem;
-  height: 10rem;
-  text-align:center;
-  line-height: 10rem;
-  border-radius: 50%;
   background: #ff5050;
   color: #ffffff;
 }
-
+.circle:before{
+  content:"";
+  display: block;
+  padding-top: 100%;
+}
 .line-circle{
-  display: inline-block;
-  width: 10rem;
-  height: 10rem;
-  text-align:center;
-  line-height: 10rem;
-  border-radius: 50%;
   border: solid 0.2rem #ff5050;
   color: #ff5050;
+}
+.line-circle:before{
+  content:"";
+  display: block;
+  padding-top: 100%;
+}
+.circle-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .line-connect{
