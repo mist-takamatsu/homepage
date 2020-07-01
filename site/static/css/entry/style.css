@@ -17,10 +17,21 @@
   padding-top: 100%;
 }
 .circle-content{
+  white-space: nowrap;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 992px) {
+  .circle-content {
+    font-size: 2rem
+  }
+}
+@media screen and (max-width: 991px) {
+  .circle-content {
+    font-size: 1.2rem
+  }
 }
 
 .line-connect{
