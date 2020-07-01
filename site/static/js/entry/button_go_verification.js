@@ -16,7 +16,7 @@ document.getElementById("button_go_verification").onclick = function () {
 	const qualification = document.entry.qualification.value;
 	const motivation = document.entry.motivation.value;
 	const question = document.entry.question.value;
-	const privacy_consent = document.entry.privacy_consent.checked;
+	const privacy_consent = document.entry.privacy_consent;
 
 	const feedback_name = document.getElementById("feedback_name");
 	const feedback_name_kn = document.getElementById("feedback_name_kn");
@@ -27,8 +27,8 @@ document.getElementById("button_go_verification").onclick = function () {
 	const feedback_email = document.getElementById("feedback_email");
 	const feedback_school_name = document.getElementById("feedback_school_name");
 	const feedback_shcool_faculty = document.getElementById("feedback_shcool_faculty");
-  const feedback_school_graduate_month = document.getElementById("feedback_school_graduate_month");
-  const feedback_privacy_consent = document.getElementById("feedback_privacy_consent");
+	const feedback_school_graduate_month = document.getElementById("feedback_school_graduate_month");
+	const feedback_privacy_consent = document.getElementById("feedback_privacy_consent");
 
 	// 入力チェック
 	let verification_flg = true;
@@ -92,8 +92,8 @@ document.getElementById("button_go_verification").onclick = function () {
 		verification_flg = false;
 	} else {
 		feedback_school_graduate_month.classList.add("d-none");
-  }
-	if (!privacy_consent) {
+	}
+	if (!privacy_consent.checked) {
 		feedback_privacy_consent.classList.remove("d-none");
 		verification_flg = false;
 	} else {
@@ -114,32 +114,29 @@ document.getElementById("button_go_verification").onclick = function () {
 		const t_email = document.getElementById("t_email");
 		const t_school_name = document.getElementById("t_school_name");
 		const t_shcool_faculty = document.getElementById("t_shcool_faculty");
-		const t_school_graduate_month = document.getElementById(
-			"t_school_graduate_month"
-		);
+		const t_school_graduate_month = document.getElementById("t_school_graduate_month");
 		const t_qualification = document.getElementById("t_qualification");
 		const t_motivation = document.getElementById("t_motivation");
 		const t_question = document.getElementById("t_question");
 		const t_privacy_consent = document.getElementById("t_privacy_consent");
 
-		if (name) t_name.innerHTML = name;
-		if (name_kn) t_name_kn.innerHTML = name_kn;
-		if (birth_date) t_birth_date.innerHTML = birth_date;
-		if (gender) t_gender.innerHTML = gender;
-		if (zip01) t_zip01.innerHTML = "&#12306;" + zip01;
-		if (pref01) t_pref01.innerHTML = pref01;
-		if (addr01) t_addr01.innerHTML = addr01;
-		if (address_building) t_address_building.innerHTML = address_building;
-		if (tel) t_tel.innerHTML = tel;
-		if (email) t_email.innerHTML = email;
-		if (school_name) t_school_name.innerHTML = school_name;
-		if (shcool_faculty) t_shcool_faculty.innerHTML = shcool_faculty;
-		if (school_graduate_month)
-			t_school_graduate_month.innerHTML = school_graduate_month;
-		if (qualification) t_qualification.innerHTML = qualification;
-		if (motivation) t_motivation.innerHTML = motivation;
-		if (question) t_question.innerHTML = question;
-		if (privacy_consent) t_privacy_consent.innerHTML = privacy_consent;
+		t_name.innerHTML = name;
+		t_name_kn.innerHTML = name_kn;
+		t_birth_date.innerHTML = birth_date;
+		t_gender.innerHTML = gender;
+		t_zip01.innerHTML = "&#12306;" + zip01;
+		t_pref01.innerHTML = pref01;
+		t_addr01.innerHTML = addr01;
+		t_address_building.innerHTML = address_building;
+		t_tel.innerHTML = tel;
+		t_email.innerHTML = email;
+		t_school_name.innerHTML = school_name;
+		t_shcool_faculty.innerHTML = shcool_faculty;
+		t_school_graduate_month.innerHTML = school_graduate_month;
+		t_qualification.innerHTML = qualification;
+		t_motivation.innerHTML = motivation;
+		t_question.innerHTML = question;
+		t_privacy_consent.innerHTML = privacy_consent.value;
 
 		// ページ切り替え
 		const title = document.getElementById("title");
@@ -159,14 +156,13 @@ document.getElementById("button_go_verification").onclick = function () {
 	} else {
 		document.getElementById("feedback_message").classList.remove("d-none");
 	}
-};;
+};
 
-document.getElementById("email").onkeyup = function() {
-
+document.getElementById("email").onkeyup = function () {
 	ConfiremEmail();
 };
 
-document.getElementById("email_confirem").onkeyup = function() {
+document.getElementById("email_confirem").onkeyup = function () {
 	ConfiremEmail();
 };
 
@@ -174,9 +170,7 @@ function ConfiremEmail() {
 	const email = document.entry.email.value;
 	const email_confirem = document.entry.email_confirem.value;
 	const feedback_email = document.getElementById("feedback_email");
-	const feedback_email_message = document.getElementById(
-		"feedback_email_message"
-	);
+	const feedback_email_message = document.getElementById("feedback_email_message");
 
 	if (email_confirem && email !== email_confirem) {
 		feedback_email_message.innerHTML = "メールアドレスが一致していません";
