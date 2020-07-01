@@ -4,173 +4,178 @@
 {{ end }}
 
 {{ define "main" }}
-<section class="about">
-  <section id="business">
-    <div class="container">
-      <!-- ICTサービス事業 -->
-      <div class="row justify-content-center">
-        <h1 class="mt-5">ICTサービス事業</h1>
-      </div>
-      <div class="row justify-content-center">
-        <div class="mb-3 border-bottom border-danger title-line"></div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="mb-3 text-center title-info">
-          <p>高松支店は当社の「ICTサービス本部 関西・四国事業部」に実行体制をおいております。<br>
-            地元企業でICTを活用したソリューションの提供をいたします。</p>
-        </div>
-      </div>
 
-      <!-- ICTサービス事業_サブ-->
-      <div class="row sub-title"> 
-        <div class="col-5 ml-auto"><p>システムエンジニアリングサービス</p></div>
-        <div class="col-5 offset-1 mr-auto"><p>受託開発サービス</p></div>
-      </div>
+<div class="container">
 
-      <div class="row sub-img">
-        <div class="col-5 ml-auto mb-3">
-          <img src="{{ .Site.BaseURL }}img/about/business_photo01.jpg" class="img-fluid"> 
+  <section class="about">
+    <section id="business">
+      <div class="container">
+        <!-- ICTサービス事業 -->
+        <div class="row justify-content-center">
+          <h1 class="mt-5">ICTサービス事業</h1>
         </div>
-        <div class="col-5 offset-1 mr-auto">
-          <img src="{{ .Site.BaseURL }}img/about/business_photo02.jpg" class="img-fluid"> 
+        <div class="row justify-content-center">
+          <div class="mb-3 border-bottom border-danger title-line"></div>
         </div>
-      </div>
+        <div class="row justify-content-center">
+          <div class="mb-3 text-center title-info">
+            <p>高松支店は当社の「ICTサービス本部 関西・四国事業部」に実行体制をおいております。<br>
+              地元企業でICTを活用したソリューションの提供をいたします。</p>
+          </div>
+        </div>
 
-      <div class="row sub-info">
-        <div class="col-5 ml-auto">
-          <p>地元の企業様のプロジェクトに貢献しております。
-          プロジェクトにマッチした技術者を紹介し、
-          客先常駐型の開発・保守・事務を行っています。</p>
+        <!-- ICTサービス事業_サブ-->
+        <div class="row sub-title">
+          <div class="col-5 ml-auto">
+            <p>システムエンジニアリングサービス</p>
+          </div>
+          <div class="col-5 offset-1 mr-auto">
+            <p>受託開発サービス</p>
+          </div>
         </div>
-        <div class="col-5 offset-1 mr-auto">
-          <p>より多くのお客様のご要望に対応できるように、
-            受託開発サービスを行っております。全社で連携して
-            最適なソリューションを提供いたします。</p>
-        </div> 
+
+        <div class="row sub-img">
+          <div class="col-5 ml-auto mb-3">
+            <img src="{{ .Site.BaseURL }}img/about/business_photo01.jpg" class="img-fluid">
+          </div>
+          <div class="col-5 offset-1 mr-auto">
+            <img src="{{ .Site.BaseURL }}img/about/business_photo02.jpg" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="row sub-info">
+          <div class="col-5 ml-auto">
+            <p>地元の企業様のプロジェクトに貢献しております。
+              プロジェクトにマッチした技術者を紹介し、
+              客先常駐型の開発・保守・事務を行っています。</p>
+          </div>
+          <div class="col-5 offset-1 mr-auto">
+            <p>より多くのお客様のご要望に対応できるように、
+              受託開発サービスを行っております。全社で連携して
+              最適なソリューションを提供いたします。</p>
+          </div>
+        </div>
+        <div class="mt-5 line"></div>
       </div>
-      <div class="mt-5 line"></div>
-    </div>  
-  </section>
+    </section>
 
     <!-- イベント -->
-  <section id="event">
-    <div class="container">
-      <div class="row justify-content-center">
-        <h1 class="mt-5 ">イベント</h1>
-      </div>
-      <div class="row justify-content-center">
-        <div class="mb-4 border-bottom border-danger title-line"></div>
-      </div>
+    <section id="event">
+      <div class="container">
+        <div class="row justify-content-center">
+          <h1 class="mt-5 ">イベント</h1>
+        </div>
+        <div class="row justify-content-center">
+          <div class="mb-4 border-bottom border-danger title-line"></div>
+        </div>
 
-      <ul class="nav nav-pills nav-fill">
-        <li class="nav-item">
-          <a href = "#e-tab01" class="nav-link active" data-toggle="pill">Recital</a>
-        </li>
-        <li class="nav-item">
-          <a href = "#e-tab02" class="nav-link" data-toggle="pill">Trip</a>
-        </li>
-        <li class="nav-item">
-          <a href = "#e-tab03" class="nav-link" data-toggle="pill">Party</a>
-        </li>
-        <li class="nav-item">
-          <a href = "#e-tab04" class="nav-link" data-toggle="pill">Sports</a>
-        </li>
-      </ul>
+        <ul class="nav nav-pills nav-fill">
+          <li class="nav-item">
+            <a href="#e-tab01" class="nav-link active" data-toggle="pill">Recital</a>
+          </li>
+          <li class="nav-item">
+            <a href="#e-tab02" class="nav-link" data-toggle="pill">Trip</a>
+          </li>
+          <li class="nav-item">
+            <a href="#e-tab03" class="nav-link" data-toggle="pill">Party</a>
+          </li>
+          <li class="nav-item">
+            <a href="#e-tab04" class="nav-link" data-toggle="pill">Sports</a>
+          </li>
+        </ul>
 
-      <div class="tab-content">
-        <!-- 画像1 -->
-        <div class="tab-pane fade show active" id="e-tab01">
-          <div class="row">
+        <div class="tab-content">
+          <!-- 画像1 -->
+          <div class="tab-pane fade show active" id="e-tab01">
+            <div class="row">
               <div class="photo col-4 my-3">
                 <img src="{{ .Site.BaseURL }}img/about/event_photo01.jpg" alt="event-img1" class="img-fluid">
               </div>
-              <div class="col-8 my-3 e-txt">  
+              <div class="col-8 my-3 e-txt">
                 <h5 class="mb-2 mb-sm-3">方針発表会</h5>
                 <p>毎年期末に全社で、今期実績や来期の方針を確認しています。この時は高松支店メンバーも
                   全員東京へ行きます。
                   本社の方たちと交流できる良い機会！面白くて優しい方たちばかりでした！</p>
-              </div>          
+              </div>
+            </div>
           </div>
-        </div> 
 
-        <!-- 画像2 -->
-        <div class="tab-pane fade" id="e-tab02">
-          <div class="row">
-            <div class="photo col-4 my-3">
-              <img src="{{ .Site.BaseURL }}img/about/event_photo02.jpg" alt="event-img1" class="img-fluid">
+          <!-- 画像2 -->
+          <div class="tab-pane fade" id="e-tab02">
+            <div class="row">
+              <div class="photo col-4 my-3">
+                <img src="{{ .Site.BaseURL }}img/about/event_photo02.jpg" alt="event-img1" class="img-fluid">
+              </div>
+              <div class="col-8 my-3 e-txt">
+                <h5 class="mb-2 mb-sm-3">社員旅行</h5>
+                <p>23期は富山に行ってきました。世界遺産の「相倉合掌造り集落」を観光したり、旅館の温泉
+                  で日々の疲れを癒しました。夜はみんなでワイワイ飲み会！</p>
+              </div>
             </div>
-            <div class="col-8 my-3 e-txt">  
-              <h5 class="mb-2 mb-sm-3">社員旅行</h5>
-              <p>23期は富山に行ってきました。世界遺産の「相倉合掌造り集落」を観光したり、旅館の温泉
-                で日々の疲れを癒しました。夜はみんなでワイワイ飲み会！</p>
-            </div>          
-          </div>     
-        </div>   
+          </div>
 
-        <!-- 画像3 -->
-        <div class="tab-pane fade" id="e-tab03">
-          <div class="row">
-            <div class="photo col-4 my-3">
-              <img src="{{ .Site.BaseURL }}img/about/event_photo03.jpg" alt="event-img1" class="img-fluid">
+          <!-- 画像3 -->
+          <div class="tab-pane fade" id="e-tab03">
+            <div class="row">
+              <div class="photo col-4 my-3">
+                <img src="{{ .Site.BaseURL }}img/about/event_photo03.jpg" alt="event-img1" class="img-fluid">
+              </div>
+              <div class="col-8 my-3 e-txt">
+                <h5 class="mb-2 mb-sm-3">忘年会</h5>
+                <p>本社は納会をしていますが、高松支店では毎年高松メンバー全員で忘年会をしています。
+                  今期はスペシャルゲストとして、社長・協力会社の方たちにも参加していただきました。
+                  飲みすぎ注意です！</p>
+              </div>
             </div>
-            <div class="col-8 my-3 e-txt">  
-              <h5 class="mb-2 mb-sm-3">忘年会</h5>
-              <p>本社は納会をしていますが、高松支店では毎年高松メンバー全員で忘年会をしています。
-                今期はスペシャルゲストとして、社長・協力会社の方たちにも参加していただきました。
-                飲みすぎ注意です！</p>
-            </div>          
-          </div>       
-        </div> 
+          </div>
 
-        <!-- 画像4 -->
-        <div class="tab-pane fade" id="e-tab04">
-          <div class="row">
-            <div class="photo col-4 my-3">
-              <img src="{{ .Site.BaseURL }}img/about/event_photo04.jpg" alt="event-img1" class="img-fluid">
+          <!-- 画像4 -->
+          <div class="tab-pane fade" id="e-tab04">
+            <div class="row">
+              <div class="photo col-4 my-3">
+                <img src="{{ .Site.BaseURL }}img/about/event_photo04.jpg" alt="event-img1" class="img-fluid">
+              </div>
+              <div class="col-8 my-3 e-txt">
+                <h5 class="mb-2 mb-sm-3">スイカマラソン</h5>
+                <p></p>
+              </div>
             </div>
-            <div class="col-8 my-3 e-txt">  
-              <h5 class="mb-2 mb-sm-3">スイカマラソン</h5>
-              <p></p>
-            </div>          
-          </div>        
-        </div> 
-      </div>
-    </div>
-  </section>
-
-  <!-- 研修 -->
-  <section id="training">
-    <div class="container">
-      <div class="row justify-content-center">
-        <h1 class="mt-5 ">研修</h1>
-      </div>      
-      <div class="row justify-content-center">
-        <div class="mb-4 border-bottom border-danger title-line"></div>
-      </div>
-
-      <div class="row justify-content-center training-Group">
-        <div class="col-5 mb-2 photo" data-toggle="collapse" data-target="#training-photo1">
-          <img src="{{ .Site.BaseURL }}img/about/training_photo01.jpg" alt="training-img1" class="img-fluid">
+          </div>
         </div>
-        <div class="col-5">
-          <h5>Javaの勉強会</h5>
-          <p>実践的な言語学習を支援するため、月1,2回ほど社内で集まりJavaの勉強会を開催していま
-            す。学習内容は実際にPCを使用し、アプリケーションの作成をしていきます。</p>
+      </div>
+    </section>
+
+    <!-- 研修 -->
+    <section id="training">
+      <div class="container">
+        <div class="row justify-content-center">
+          <h1 class="mt-5 ">研修</h1>
+        </div>
+        <div class="row justify-content-center">
+          <div class="mb-4 border-bottom border-danger title-line"></div>
         </div>
 
+        <div class="row justify-content-center training-Group">
+          <div class="col-5 mb-2 photo" data-toggle="collapse" data-target="#training-photo1">
+            <img src="{{ .Site.BaseURL }}img/about/training_photo01.jpg" alt="training-img1" class="img-fluid">
+          </div>
+          <div class="col-5">
+            <h5>Javaの勉強会</h5>
+            <p>実践的な言語学習を支援するため、月1,2回ほど社内で集まりJavaの勉強会を開催していま
+              す。学習内容は実際にPCを使用し、アプリケーションの作成をしていきます。</p>
+          </div>
+
+        </div>
+
       </div>
-
-    </div>
+    </section>
   </section>
-</section>
 
-<div class="container">
-  <div style="height: 100vh;"></div>
 </div>
 
 {{ end }}
 
 {{ define "script" }}
 <script src="{{ .Site.BaseURL }}js/about/main.js"></script>
-  
+
 {{ end }}
