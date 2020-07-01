@@ -1,35 +1,14 @@
 {{ define "head" }}
   <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
-  <script src="{{ .Site.BaseURL }}js/entry/defult.js"></script>
+  <script src="{{ .Site.BaseURL }}js/entry/default.js"></script>
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/entry/style.css">
 {{ end }}
 
 {{ define "main" }}
 
 <div class="container">
 
-  <h1 class="my-5 text-center" id="title">エントリーホーム</h1>
-
-  <div class="row my-5">
-    <div class="col-lg-2 col-3 offset-lg-2 text-center align-items-center font-weight-bold" id="pager_input">
-      入力
-    </div>
-    <div class="col-1 text-center align-items-center text-muted">
-      <svg class="bi bi-chevron-right" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L10.293 8 4.646 2.354a.5.5 0 010-.708z" clip-rule="evenodd" />
-      </svg>
-    </div>
-    <div class="col-lg-2 col-4 text-center align-items-center text-muted" id="pager_verification">
-      確認
-    </div>
-    <div class="col-1 text-center align-items-center text-muted">
-      <svg class="bi bi-chevron-right" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L10.293 8 4.646 2.354a.5.5 0 010-.708z" clip-rule="evenodd" />
-      </svg>
-    </div>
-    <div class="col-lg-2 col-3 text-center align-items-center text-muted" id="pager_done">
-      完了
-    </div>
-  </div>
+  {{ partial "entry_header_map" (dict "title" "エントリーホーム" "key1" "circle" "key2" "line-circle" "key3" "line-circle") }}
 
   <form name="entry" action="/entry_done" method="POST" data-netlify="true">
 
@@ -77,7 +56,7 @@
 
           <div class="form-group row">
             <label for="birth_date" class="col-sm-3 col-form-label order-sm-2">生年月日※</label>
-            <div class="col-sm-3 order-sm-3">
+            <div class="col-lg-3 col-md-4 col-sm-5 order-sm-3">
               <input type=date class="form-control" id="birth_date" name="birth_date">
             </div>
             <div class="col-sm-9 offset-sm-3 order-sm-1 d-none" id="feedback_birth_date">
@@ -250,7 +229,7 @@
 
           <div class="form-group row">
             <label for="school_graduate_month" class="col-sm-3 col-form-label order-sm-2">卒業年月※</label>
-            <div class="col-sm-3 order-sm-3">
+            <div class="col-lg-3 col-md-4 col-sm-5 order-sm-3">
               <input type="month" class="form-control" id="school_graduate_month" name="school_graduate_month">
             </div>
             <div class="col-sm-9 offset-sm-3 order-sm-1 d-none" id="feedback_school_graduate_month">
@@ -279,7 +258,7 @@
             </div>
           </div>
 
-          <div class="form-group row my-5">
+          <div class="form-group row mt-4">
             <div class="col-md-8 offset-md-2">
               <div class="row  mb-3">
                 <div class="col">
@@ -287,12 +266,15 @@
                 </div>
               </div>
               <div class="row mb-3">
+                <div class="col-12 d-none" id="feedback_privacy_consent">
+                  <span class="ml-4 small text-danger">&nbsp;&nbsp;&nbsp;&nbsp;同意するのチェックは必須です</span>
+                </div>
                 <div class="col-3 offset-1 form-check">
-                  <input type="checkbox" class="form-check-input" id="privacy_consent" name="privacy_consent">
+                  <input type="checkbox" class="form-check-input" id="privacy_consent" name="privacy_consent" value="同意する">
                   <label class="form-check-label" for="privacy_consent">同意する</label>
                 </div>
                 <div class="col-8">
-                  ▼個人情報の取り扱いについて
+                  <a href="https://www.mistnet.co.jp/PersonalInformationHandling.html" target="blank">▼個人情報の取り扱いについて</a>
                 </div>
               </div>
               <div class="row mb-3">
@@ -304,8 +286,8 @@
           </div>
 
           <div class="form-group row">
-            <div class="col text-center">
-              <a class="btn btn-primary" id="button_go_verification" href="#" role="button">入力内容の確認画面へ</a>
+            <div class="col-lg-4 offset-lg-4 text-center">
+              <a class="btn btn-dark rounded-pill btn-lg btn-lg-block" id="button_go_verification" href="#" role="button">入力内容の確認画面へ</a>
             </div>
           </div>
 
@@ -388,6 +370,10 @@
             <th scope="row" class="table-secondary font-weight-normal text-nowrap">希望・質問</th>
             <td id="t_question"></td>
           </tr>
+          <tr>
+            <th scope="row" class="table-secondary font-weight-normal text-nowrap">個人情報について</th>
+            <td id="t_privacy_consent"></td>
+          </tr>
         </tbody>
       </table>
 
@@ -396,7 +382,7 @@
           <a class="btn" id="button_back_input" href="#" role="button">戻る</a>
         </div>
         <div class="col-4 text-center">
-          <button class="btn btn-primary" type="submit">送信</button>
+          <button class="btn btn-dark rounded-pill btn-lg btn-block" type="submit">送信</button>
         </div>
       </div>
 
