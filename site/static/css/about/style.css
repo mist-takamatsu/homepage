@@ -2,34 +2,20 @@
     padding: 0 30px;
 }
 
-h1 {
-    /* 24px～36px */
-    font-size: calc(1.5rem + ((1vw - 4.8px) * 0.8333));
-}
-
 .title-line {
     width: 25vw;
 }
+
 
 /* ICTサービス事業 */
 #business {
     margin: 0 auto;
     border-bottom: solid 0.1px #cccccc;
 }
-
-#business .title-info p{
-    /* 10px～24px */
-    font-size: calc(0.625rem + ((1vw - 4.8px) * 0.9722));
-}
-
 #business .sub-title p {
-    /* 10px～24px */
-    font-size: calc(0.625rem + ((1vw - 4.8px) * 0.9722));
     color: #d91c3c;
 }
 #business .sub-info p {
-    /* 8px～20px */
-    font-size: calc(0.5rem + ((1vw - 4.8px) * 0.8333));
     text-decoration: underline;
 }
 
@@ -38,9 +24,6 @@ h1 {
 #event {
     margin: 0 auto;
     border-bottom: solid 0.1px #cccccc;
-}
-#event .photo img{
-    
 }
 #event .e-txt h5 {
     /* 16px～30px */
@@ -62,4 +45,93 @@ h1 {
     /* 10px～24px */
     font-size: calc(0.625rem + ((1vw - 4.8px) * 0.9722));
     text-align: left;
+}
+
+@media(max-width: 767px) {
+    .about h1 {
+        font-size: 20px;
+    }
+    #business .title-info p{
+        font-size: 16px;
+    }
+    #business .sub-title p {
+        font-size: 16px;
+    }
+    #business .sub-info p {
+        font-size: 14px;
+    }
+    #event .e-txt h5 {
+        font-size: 16px;
+    }
+    #event .e-txt p{
+        font-size: 10px;
+    }
+    #training h5 {
+        font-size: 16px;
+    }
+    #training .training-Group p {
+        /* 10px～24px */
+        font-size: 10px;
+    }
+}
+@media(min-width: 768px) {
+    .sub-2 {
+        width: 100%;
+        margin-left: 100px;
+    }
+    .about h1 {
+        font-size: 32px;
+    }
+    #business .title-info p{
+        font-size: 20px;
+    }
+    #business .sub-title p {
+        font-size: 16px;
+    }
+    #business .sub-info p {
+        font-size: 20px;
+    }
+    #event .e-txt h5 {
+        font-size: 16px;
+    }
+    #event .e-txt p{
+        font-size: 10px;
+    }
+    #training h5 {
+        font-size: 16px;
+    }
+    #training .training-Group p {
+        font-size: 10px;
+    }
+}
+@media(min-width: 992px) {
+    .sub-2 {
+        width: 100%;
+        margin-left: 150px;
+    }
+    .about h1 {
+        font-size: 32px;
+    }
+    #business .title-info p{
+        font-size: 20px;
+    }
+    #business .sub-title p {
+        font-size: 20px;
+    }
+    #business .sub-info p {
+        font-size: 20px;
+    }
+    #event .e-txt h5 {
+        font-size: 16px;
+    }
+    #event .e-txt p{
+        font-size: 10px;
+    }
+    #training h5 {
+        font-size: 16px;
+    }
+    #training .training-Group p {
+        /* 10px～24px */
+        font-size: 10px;
+    }
 }
