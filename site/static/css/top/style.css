@@ -1,3 +1,26 @@
+
+.img-container {
+    text-align: center;
+}
+
 .img-circle {
     border-radius: 50%;
+}
+
+.h2-txt {
+    justify-content: center;
+    color: #d91c3c;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.center {
+    text-align: center;
 }
