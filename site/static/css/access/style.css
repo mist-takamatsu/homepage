@@ -6,15 +6,20 @@
         font-size: 18px;
     }
     #access .address-info {
-        font-size: 16px;
+        font-size: 14px;
+    }
+    #access iframe {
+        width: 90%;
+        height: auto;
     }
 }
 @media (min-width: 768px) {
     #access h1 {
-        font-size: 30px
+        font-size: 30px;
     }
     #access .address {
         font-size: 24px;
+        font-weight: normal;
     }
     #access .address-info {
         font-size: 20px;
