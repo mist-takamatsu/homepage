@@ -10,33 +10,31 @@ h4 {
 }
 
 @media (max-width: 577px) {
-    .team {
-        width: auto;
-    }
-    .container {
-        width: 555px;
-    }
     h1 {
         font-size: 22px;
     }
     h2 {
-        font-size: 22px;
-        padding: 20px 0;
+        font-size: 20px;
+        margin: 30px 0;
     }
     h3 {
-        font-size: 18px;
+        font-size: 16px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    .team p {
+        font-size: 14px;
+        margin: 10px;
     }
     .manager_photo {
-        width: 70%;
+        width: 100%;
     }
     .manager_container {
         text-align: center;
     }
 }
 @media (min-width: 578px) {
-    .container {
-        width: 555px;
-    }
     h1 {
         font-size: 26px;
     }
@@ -55,9 +53,6 @@ h4 {
     }
 }
 @media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
     h1 {
         font-size: 30px;
     }
