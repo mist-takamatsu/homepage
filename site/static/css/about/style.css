@@ -2,8 +2,10 @@
     padding: 0 30px;
 }
 
-.title-line {
-    width: 25vw;
+.about h1 {
+    margin: 30px;
+    padding: 10px;
+    border-bottom: solid 1px red;
 }
 
 
@@ -28,13 +30,9 @@
 
 /* 研修 */
 #training h5 {
-    /* 16px～30px */
-    font-size: calc(1rem + ((1vw - 7.68px) * 1.2153));
     font-weight: bole;
 }
 #training .training-Group p {
-    /* 10px～24px */
-    font-size: calc(0.625rem + ((1vw - 4.8px) * 0.9722));
     text-align: left;
 }
 
