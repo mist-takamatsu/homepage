@@ -1,0 +1,149 @@
+h2 {
+    padding: 0 0 10px;
+}
+h3 {
+    padding: 5px 0;
+}
+h4 {
+    float: right;
+    padding: 0 0 20px;
+}
+
+@media (max-width: 577px) {
+    h1 {
+        font-size: 22px;
+    }
+    h2 {
+        font-size: 20px;
+        margin: 30px 0;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    .team p {
+        font-size: 14px;
+        margin: 10px;
+    }
+    .manager_photo {
+        width: 100%;
+    }
+    .manager_container {
+        text-align: center;
+    }
+}
+@media (min-width: 578px) {
+    h1 {
+        font-size: 26px;
+    }
+    h2 {
+        font-size: 26px;
+        padding: 30px 0 20px 0;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    h4 {
+        font-size: 22px;
+    }
+    .manager_photo {
+        width: 80%;
+    }
+}
+@media (min-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    h4 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .manager_photo {
+        width: 100%;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    h3 {
+        font-size: 20px
+    }
+    h4 {
+        font-size: 26px;
+    }
+    .manager_photo {
+        width: 100%;
+    }
+
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15;
+    margin-right: auto;
+    margin-left: auto;
+}
+.title-line {
+    margin: 0 0 50px;
+    width: 25vw;
+}
+.manager {
+    margin-bottom: 50px;
+}
+.manager h3 {
+    float: right;
+}
+
+.manager p {
+    float: right;
+}
+.manager_title {
+    margin: 30px;
+    padding: 10px;
+    border-bottom: solid 1px red;
+}
+.interview_header {
+    border-top: solid 1px #cccccc;
+    border-bottom: solid 1px #cccccc;
+}
+.interview_header p {
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.interview_title {
+    margin: 30px;
+    padding: 10px;
+    border-bottom: solid 1px red;
+}
+.interview_title {
+    border-bottom: solid 1px red;
+}
+.interview_group {
+    margin-top: 50px;
+}
+.interview_group h3{
+    float: left;
+}
+.interview_group p {
+    float: right;
+}
+.member {
+    margin-bottom: 60px;
+}
