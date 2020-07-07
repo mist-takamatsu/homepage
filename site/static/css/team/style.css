@@ -33,6 +33,9 @@ h4 {
     .manager_container {
         text-align: center;
     }
+    .manager h4 {
+        margin-left: 50px;
+    }
 }
 @media (min-width: 578px) {
     h1 {
