@@ -6,16 +6,32 @@
   <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <div class="nav-item text-lg-center">
+        {{ if eq .Section "team" }}
+        <div class="nav-link text-danger border-danger" style="border-bottom: solid 0.2rem;">メッセージ</div>
+        {{ else }}
         <a class="nav-link text-dark" href="/team">TEAM</a>
+        {{ end }}
       </div>
       <div class="nav-item text-lg-center">
+        {{ if eq .Section "about" }}
+        <div class="nav-link text-danger border-danger" style="border-bottom: solid 0.2rem;">活動紹介</div>
+        {{ else }}
         <a class="nav-link text-dark" href="/about">ABOUT</a>
+        {{ end }}
       </div>
       <div class="nav-item text-lg-center">
+        {{ if eq .Section "access" }}
+        <div class="nav-link text-danger border-danger" style="border-bottom: solid 0.2rem;">企業情報</div>
+        {{ else }}
         <a class="nav-link text-dark" href="/access">ACCESS</a>
+        {{ end }}
       </div>
       <div class="nav-item text-lg-center">
+        {{ if eq .Section "infomation" }}
+        <div class="nav-link text-danger border-danger" style="border-bottom: solid 0.2rem;">募集要項</div>
+        {{ else }}
         <a class="nav-link text-dark" href="/infomation">INFOMATION</a>
+        {{ end }}
       </div>
       <div class="nav-item text-center ml-5">
         <a class="nav-link text-white btn btn-danger rounded-pill font-weight-bold" href="/entry">ENTRY</a>
