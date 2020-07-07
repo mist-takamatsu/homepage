@@ -49,7 +49,7 @@
   content: '';
   position: absolute;
   left: 50%;
-  bottom: -15px;/*線の上下位置*/
+  bottom: -1rem;/*線の上下位置*/
   display: inline-block;
   width: 70%;/*線の長さ*/
   height: 1px;/*線の太さ*/
