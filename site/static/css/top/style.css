@@ -1,0 +1,19 @@
+.top1{
+  position: relative;
+}
+
+.top-img1{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+@media screen and (min-width: 992px) {
+  .top-img1{
+    width: 80%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .top-img1{
+    width: 100%;
+  }
+}

@@ -15,7 +15,11 @@
 .navbar {
 	position: relative;
 }
-@media screen and (max-width: 992px) {
+
+@media screen and (max-width: 991px) {
+	.navbar {
+		background-color: #ffffff;
+	}	
 	.navbar-brand {
 		position: absolute;
 		top: 0.2rem;

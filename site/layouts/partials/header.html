@@ -1,3 +1,4 @@
+<div class="fixed-top">
 <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
   <a class="navbar-brand p-0 ml-lg-3" href="/">
     <img src="/img/header/hp_logo4.png" height="50rem" class="d-inline-block align-top" alt="logo">
@@ -10,6 +11,8 @@
       <div class="nav-item text-center d-none d-lg-block">
         {{ if eq .Section "team" }}
         <div class="nav-link text-danger border-danger" style="border-bottom: solid 0.2rem;">メッセージ</div>
+        {{ else if .IsHome }}
+        <a class="nav-link text-light" href="/team">TEAM</a>
         {{ else }}
         <a class="nav-link text-dark" href="/team">TEAM</a>
         {{ end }}
@@ -25,6 +28,8 @@
       <div class="nav-item text-center d-none d-lg-block">
         {{ if eq .Section "about" }}
         <div class="nav-link text-danger border-danger" style="border-bottom: solid 0.2rem;">活動紹介</div>
+        {{ else if .IsHome }}
+        <a class="nav-link text-light" href="/about">ABOUT</a>
         {{ else }}
         <a class="nav-link text-dark" href="/about">ABOUT</a>
         {{ end }}
@@ -40,6 +45,8 @@
       <div class="nav-item text-center d-none d-lg-block">
         {{ if eq .Section "access" }}
         <div class="nav-link text-danger border-danger" style="border-bottom: solid 0.2rem;">企業情報</div>
+        {{ else if .IsHome }}
+        <a class="nav-link text-light" href="/access">ACCESS</a>
         {{ else }}
         <a class="nav-link text-dark" href="/access">ACCESS</a>
         {{ end }}
@@ -55,6 +62,8 @@
       <div class="nav-item text-center d-none d-lg-block">
         {{ if eq .Section "infomation" }}
         <div class="nav-link text-danger border-danger" style="border-bottom: solid 0.2rem;">募集要項</div>
+        {{ else if .IsHome }}
+        <a class="nav-link text-light" href="/infomation">INFOMATION</a>
         {{ else }}
         <a class="nav-link text-dark" href="/infomation">INFOMATION</a>
         {{ end }}
@@ -90,3 +99,4 @@
     </div>
   </div>
 </nav>
+</div>

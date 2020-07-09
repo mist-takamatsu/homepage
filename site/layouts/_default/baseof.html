@@ -23,6 +23,7 @@
 
   {{- partial "header" . -}}
 
+  {{ if not .IsHome }}<div class="pt-5 pb-lg-3 pb-2"></div>{{ end }}
   {{- block "main" . }}{{- end }}
 
   {{- partial "footer" . -}}
