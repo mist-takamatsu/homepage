@@ -17,3 +17,37 @@
     width: 100%;
   }
 }
+
+.top-txt {
+  position: absolute;
+  font-weight: bold;
+  background-color: #ffffffa4;
+}
+@media screen and (min-width: 992px) {
+  .top-txt {
+    font-size: 4.5vw;
+    padding: 0 1vw;
+    border-radius: 1vw;
+    left: 6vw;
+  }
+  .top-txt1 {
+    top: 10vw;
+  }
+  .top-txt2 {
+    top: 20vw;
+  }
+}
+@media screen and (max-width: 991px) {
+  .top-txt {
+    font-size: 6vw;
+    padding: 0 1.5vw;
+    border-radius: 1.5vw;
+    left: 6vw;
+  }
+  .top-txt1 {
+    top: 8vw;
+  }
+  .top-txt2 {
+    top: 20vw;
+  }
+}
