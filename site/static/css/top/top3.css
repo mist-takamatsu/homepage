@@ -4,16 +4,16 @@
 
 .top3-bg {
 	position: absolute;
-	width: 80vw;
-	height: 50vw;
+	width: 81vw;
+	height: 54vw;
 	top: 15rem;
-	left: 3rem;
+	right: 1.5rem;
 	background-color: #e6ffe9;
 }
 
 .top3-img {
 	position: absolute;
-	width: 80vw;
+	width: 81vw;
 	top: 10rem;
 	left: 1.5rem;
 }

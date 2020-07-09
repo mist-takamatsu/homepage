@@ -7,8 +7,8 @@
 }
 .top2-bg1 {
 	width: calc(100% - 4.5rem);
-	height: calc(100% - 3rem);
-	top: 3rem;
+	height: calc(100% - 5rem);
+	top: 5rem;
 	left: 1.5rem;
 	background-color: #e6ffe9;
 }
@@ -16,6 +16,6 @@
 	width: calc(100% - 4.5rem);
 	height: calc(100% - 5rem);
 	top: 0;
-	left: 3rem;
+	right: 1.5rem;
 	background-color: #f5f5f5;
 }
