@@ -1,14 +1,15 @@
 .top1{
   position: relative;
+  margin-bottom: 3.5rem;
 }
 @media screen and (min-width: 992px) {
   .top1{
-    height: 57vw;
+    height: 54.6vw;
   }
 }
 @media screen and (max-width: 991px) {
   .top1{
-    height: calc(80vw - 3.5rem);
+    height: calc(74vw - 3.5rem);
   }
 }
 
