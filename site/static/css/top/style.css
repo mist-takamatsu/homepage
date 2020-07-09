@@ -1,6 +1,16 @@
 .top1{
   position: relative;
 }
+@media screen and (min-width: 992px) {
+  .top1{
+    height: 57vw;
+  }
+}
+@media screen and (max-width: 991px) {
+  .top1{
+    height: calc(80vw - 3.5rem);
+  }
+}
 
 .top-img1{
   position: absolute;
