@@ -24,6 +24,6 @@
 		position: absolute;
 		top: 0.2rem;
 		left: 50%;
-		transform: translate(-50%, 0);
+		transform: translateX(-50%);
 	}
 }
